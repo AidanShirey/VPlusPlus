@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+.mapcard {
+  display: flex;
+  min-width: 75%;
+  min-height: 50%;
+  background-color: black;
+}
