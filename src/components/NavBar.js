@@ -6,7 +6,7 @@ export class NavBar extends Component {
     return (
         <div className="topnavbar">
             <div className="logo"><strong>V++</strong></div>
-            <div className="dividerline">|</div>
+            <div className="dividerline"> // </div>
             <Maptab name="Ascent"/>
             <Maptab name="Bind"/>
             <Maptab name="Breeze"/>

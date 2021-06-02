@@ -7,10 +7,9 @@ export class Maptab extends Component {
         <div className="dropdown">
           <button className="dropbtn">{this.props.name}</button>
             <div className="dropdown-content">
-              <a>Overview</a>
-              <a>Defense</a>
-              <a>Offense</a>
-              <a>Lineups</a>
+              <div>Overview</div>
+              <div>Defending</div>
+              <div>Attacking</div>
             </div>
         </div>
       </div>

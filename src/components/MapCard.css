@@ -2,9 +2,58 @@
   box-sizing: border-box;
 }
 
+.mapbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 33.33333333%;
+  height: 25%;
+  font-size: 5vmin;
+  border: none;
+  color: whitesmoke;
+}
+
+.mapbuttoncontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
 .mapcard {
   display: flex;
-  min-width: 75%;
-  min-height: 50%;
+  flex-direction: column;
+  min-width: 75vw;
+  min-height: 50vh;
   background-color: black;
+  background-size: cover;
+}
+
+.ascent {
+  background-image: url("ascentbg.png");
+}
+
+.bind {
+  background-image: url("bindbg.png");
+}
+
+.breeze {
+  background-image: url("breezebg.png");
+}
+
+.haven {
+  background-image: url("havenbg.png");
+}
+
+.icebox {
+  background-image: url("iceboxbg.png");
+}
+
+.split {
+  background-image: url("splitbg.png");
+}
+
+.mapcardspacing {
+  width: 75vw;
+  height: 100vh;
 }
