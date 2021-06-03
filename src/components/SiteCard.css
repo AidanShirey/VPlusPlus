@@ -1,17 +1,21 @@
 .sitecard {
   display: flex;
-  min-width: 75vw;
-  min-height: 50vh;
+  width: 75vw;
+  height: 50vh;
 }
 
 .sitelineup {
   background-color: #fa4454;
   width: 50%;
-  height: 100;
+  height: 100%;
 }
 
 .sitedesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: black;
+  padding: 2.5%;
   width: 50%;
-  height: 100;
+  height: 100%;
 }

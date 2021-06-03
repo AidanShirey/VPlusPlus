@@ -8,7 +8,7 @@ function App() {
         <NavBar />
         <br/>
         <div className="contentarea">
-          <MapSitePage name="Defending"/>
+          <MapSitePage name="Ascent" side="Defending"/>
         </div>
       </div>
   );
