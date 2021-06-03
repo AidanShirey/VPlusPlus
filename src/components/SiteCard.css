@@ -1,0 +1,17 @@
+.sitecard {
+  display: flex;
+  min-width: 75vw;
+  min-height: 50vh;
+}
+
+.sitelineup {
+  background-color: #fa4454;
+  width: 50%;
+  height: 100;
+}
+
+.sitedesc {
+  background-color: black;
+  width: 50%;
+  height: 100;
+}

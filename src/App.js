@@ -1,6 +1,6 @@
-import './style.css';
-import {NavBar} from './components/NavBar';
-import Homepage from './components/Homepage';
+import './style.css'
+import {NavBar} from './components/NavBar'
+import Homepage from './components/Homepage'
 import MapSitePage from './components/MapSitePage'
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <NavBar />
         <br/>
         <div className="contentarea">
-          <MapSitePage/>
+          <MapSitePage name="Defending"/>
         </div>
       </div>
   );
