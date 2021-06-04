@@ -12,6 +12,7 @@ function App() {
         <div className="contentarea">
           <Switch>
             <Route path="/" exact component={Homepage}/>
+            <Route path="/vplusplus" component={Homepage}/>
             <Route path="/defending-ascent" component={() => <MapSitePage name="Ascent" side="Defending"/>}/>
             <Route path="/attacking-ascent" component={() => <MapSitePage name="Ascent" side="Attacking"/>}/>
             <Route path="/defending-bind" component={() => <MapSitePage name="Bind" side="Defending"/>}/>
