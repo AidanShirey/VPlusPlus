@@ -1,21 +1,21 @@
 import React,{Component} from 'react';
-
-export class Maptab extends Component {
-  render() {
+import {Link} from 'react-router-dom';
+export default function Maptab(props) {
+    var linkclassdefending = "defending-" + props.name;
+    var linkclassattacking = "attacking-" + props.name;
     return (
-      <div className="topnavtab">
+    <div className="topnavtab">
         <div className="dropdown">
-          <button className="dropbtn">{this.props.name}</button>
+          <button className="dropbtn">{props.name}</button>
             <div className="dropdown-content">
-              <div>Overview</div>
-              <div>Defending</div>
-              <div>Attacking</div>
+              <Link to={linkclassdefending}><div>Defending</div></Link>
+              <Link to={linkclassattacking}><div>Attacking</div></Link>
             </div>
         </div>
       </div>
-    );
-  }
+    )
 }
+
 
 
 
