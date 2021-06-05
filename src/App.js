@@ -2,7 +2,7 @@ import './style.css'
 import {NavBar} from './components/NavBar'
 import Homepage from './components/Homepage'
 import MapSitePage from './components/MapSitePage'
-import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom"
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>

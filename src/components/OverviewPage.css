@@ -1,0 +1,19 @@
+.overviewcard {
+  width: 75vw;
+  height: 75vh;
+}
+
+.overviewsplit {
+  width: 100%;
+  height: 50%;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
