@@ -3,6 +3,6 @@
 The Valorant Map Database.
 
 LINE UPS LEFT:
-VIPER
-BRIM
+SOVA SHOCK
+CYPHER CAM
 
