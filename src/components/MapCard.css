@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+.buttondivider {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 25%;
+  font-size: 5vw;
+  color: #fa4454;
+}
+
 .mapbutton {
   display: flex;
   justify-content: center;
@@ -9,9 +18,9 @@
   background-color: black;
   width: 33.33333333%;
   height: 25%;
-  font-size: 5vmin;
+  font-size: 4vw;
   border: none;
-  color: whitesmoke;
+  color: #fa4454;
 }
 
 .mapbuttoncontainer {
@@ -29,27 +38,27 @@
   background-size: cover;
 }
 
-.ascent {
+.Ascent {
   background-image: url("ascentbg.png");
 }
 
-.bind {
+.Bind {
   background-image: url("bindbg.png");
 }
 
-.breeze {
+.Breeze {
   background-image: url("breezebg.png");
 }
 
-.haven {
+.Haven {
   background-image: url("havenbg.png");
 }
 
-.icebox {
+.Icebox {
   background-image: url("iceboxbg.png");
 }
 
-.split {
+.Split {
   background-image: url("splitbg.png");
 }
 

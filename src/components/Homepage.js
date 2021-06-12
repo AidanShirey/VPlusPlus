@@ -7,17 +7,17 @@ export default function Homepage() {
         <div>
         <Greeting />
           <br/>
-          <MapCard name="ascent"/>
+          <MapCard name="Ascent"/>
           <br/>
-          <MapCard name="bind"/>
+          <MapCard name="Bind"/>
           <br/>
-          <MapCard name="breeze"/>
+          <MapCard name="Breeze"/>
           <br/>
-          <MapCard name="haven"/>
+          <MapCard name="Haven"/>
           <br/>
-          <MapCard name="icebox"/>
+          <MapCard name="Icebox"/>
           <br/>
-          <MapCard name="split"/>
+          <MapCard name="Split"/>
         </div>
     )
 }

@@ -6,9 +6,11 @@ export default function MapCard(props) {
     return (
         <div className={map}>
             <div className="mapcardspacing mapbuttoncontainer">
-                <button className="mapbutton">Overview</button>
-                <button className="mapbutton">Defending</button>
-                <button className="mapbutton">Attacking</button>
+                <button className="mapbutton"><strong>{props.name}</strong></button>
+                <div className="buttondivider"><strong>//</strong></div>
+                <button className="mapbutton"><strong>Defending</strong></button>
+                <div className="buttondivider"><strong>//</strong></div>
+                <button className="mapbutton"><strong>Attacking</strong></button>
             </div>
         </div>
     )
