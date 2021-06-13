@@ -1,19 +1,24 @@
 .charselect {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 75vw;
   height: 25vh;
 }
 
 .imageportraitcontainer {
-  width: 5vw;
-  height: 10vh;
+  width: 5em;
+  height: 5em;
   border-radius: 50%;
 }
 
+.imageportraitcontainer:hover {
+  border: 0.5em solid #fa4454;
+}
+
 .spacing {
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .dropbtn {
