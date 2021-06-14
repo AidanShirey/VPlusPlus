@@ -2,14 +2,19 @@ import './style.css'
 import {NavBar} from './components/NavBar'
 import Homepage from './components/Homepage'
 import MapSitePage from './components/MapSitePage'
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
+import ScrollToTop from './components/ScrollToTop'
+import {BrowserRouter as Router, Route, Switch, withRouter} from "react-router-dom"
+
+
+
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <div className="fullscreen">
+      <div id='scroll' className="fullscreen">
         <NavBar />
         <br/>
         <div className="contentarea">
+          <ScrollToTop>
           <Switch>
             <Route path="/" exact component={Homepage}/>
             <Route path="/defending-ascent" component={() => <MapSitePage name="Ascent" side="Defending"/>}/>
@@ -25,6 +30,7 @@ function App() {
             <Route path="/defending-split" component={() => <MapSitePage name="Split" side="Defending"/>}/>
             <Route path="/attacking-split" component={() => <MapSitePage name="Split" side="Attacking"/>}/>
           </Switch>
+          </ScrollToTop>
         </div>
       </div>
     </Router>

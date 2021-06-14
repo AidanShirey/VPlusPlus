@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 /* Layout Classes */
 .fullscreen {
   position: fixed;
