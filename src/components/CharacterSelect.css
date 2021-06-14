@@ -2,8 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 75vw;
   height: 25vh;
+}
+
+.portraits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.description {
+  font-size: 2em;
+  padding-bottom: 1em;
 }
 
 .imageportraitcontainer {
