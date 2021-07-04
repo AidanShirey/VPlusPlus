@@ -6,7 +6,7 @@ export default function Maptab(props) {
     return (
     <div className="topnavtab">
         <div className="dropdown">
-          <button className="dropbtn">{props.name}</button>
+          <button className="dropbtn"><strong>{props.name}</strong></button>
             <div className="dropdown-content">
               <Link to={linkclassdefending}><div>Defending</div></Link>
               <Link to={linkclassattacking}><div>Attacking</div></Link>
