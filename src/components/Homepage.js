@@ -1,23 +1,20 @@
 import React from 'react'
-import Greeting from './Greeting'
+import './Homepage.css'
 import MapCard from './MapCard'
 
 export default function Homepage() {
     return (
-        <div>
-        <Greeting />
-          <br/>
-          <MapCard name="Ascent"/>
-          <br/>
-          <MapCard name="Bind"/>
-          <br/>
-          <MapCard name="Breeze"/>
-          <br/>
-          <MapCard name="Haven"/>
-          <br/>
-          <MapCard name="Icebox"/>
-          <br/>
-          <MapCard name="Split"/>
+        <div>       
+          <div className="row">
+            <div className="item"><MapCard name="Ascent"/></div>
+            <div className="item"><MapCard name="Bind"/></div>
+            <div className="item"><MapCard name="Breeze"/></div>
+          </div>
+          <div className="row">
+            <div className="item"><MapCard name="Haven"/></div>
+            <div className="item"><MapCard name="Icebox"/></div>
+            <div className="item"><MapCard name="Split"/></div>
+          </div>
         </div>
     )
 }

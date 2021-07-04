@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import './MapSitePage.css'
 import SiteCard from './SiteCard'
 import CharacterSelect from './CharacterSelect'

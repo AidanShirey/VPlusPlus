@@ -1,0 +1,7 @@
+.row{
+    display:flex;
+}
+
+.item{
+    margin: 2rem;
+}
