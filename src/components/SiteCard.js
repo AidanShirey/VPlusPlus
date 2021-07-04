@@ -4,10 +4,10 @@ import './SiteCard.css'
 export default function SiteCard(props) {
     return (
         <div className="sitecard">
-            <video className="sitelineup" src={props.video} controls>
+            <video className="sitecardlineup" src={props.video} controls>
             </video>
-            <div className="sitedesc">
-                <div className="header">
+            <div className="sitecarddesc">
+                <div className="sitecardheader">
                     <strong>{props.name}</strong>
                 </div>
                 <p>

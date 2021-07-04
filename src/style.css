@@ -28,6 +28,15 @@
   color: #fa4454;
   background-color: #505050;
 }
+
+.row{
+  display:flex;
+}
+
+.item{
+  margin: 2rem;
+}
+
 /* Text Classes */
 .logo {
   padding-left: 5%;

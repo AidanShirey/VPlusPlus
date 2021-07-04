@@ -1,21 +1,34 @@
 .sitecard {
   display: flex;
-  width: 75vw;
-  height: 50vh;
+  flex-direction: column;
+  width: 30rem;
+  height: 44rem;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
-.sitelineup {
-  background-color: #fa4454;
-  width: 50%;
+.sitecardlineup {
+  width: 100%;
   height: 100%;
 }
 
-.sitedesc {
+.sitecardheader{
+  font-size: 2rem;
+  color:#fa4454;
+}
+
+.sitecarddesc {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: black;
-  padding: 2.5%;
-  width: 50%;
+  padding: 2rem;
+  width: 100%;
   height: 100%;
+}
+
+.sitecarddesc p {
+  line-height: 1.5rem;
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
 }

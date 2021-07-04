@@ -3,8 +3,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 75vw;
-  height: 25vh;
 }
 
 .portraits {
@@ -20,16 +18,12 @@
 }
 
 .imageportraitcontainer {
-  width: 5em;
-  height: 5em;
+  width: 5rem;
+  height: 5rem;
+  margin-left: 2rem;
   border-radius: 50%;
 }
 
 .imageportraitcontainer:hover {
-  border: 0.5em solid #fa4454;
-}
-
-.spacing {
-  padding-left: 1em;
-  padding-right: 1em;
+  border: 0.5rem solid #fa4454;
 }
