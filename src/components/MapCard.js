@@ -8,8 +8,11 @@ export default function MapCard(props) {
     var linkclassattacking = "attacking-" + props.name;
     return (
         <div className={map}>
-            <div className="mapbutton">
+            <div className="mapname">
                 <strong>{props.name}</strong>
+            </div>
+            <div className="mapdivider">
+                //
             </div>
             <Link className="mapbutton" style={{textDecoration: "none"}} to={linkclassattacking}><strong>Attacking</strong></Link>
             <Link className="mapbutton" style={{textDecoration: "none"}} to={linkclassdefending}><strong>Defending</strong></Link>

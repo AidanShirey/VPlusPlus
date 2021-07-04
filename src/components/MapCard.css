@@ -14,6 +14,30 @@
   color: #fa4454;
 }
 
+.mapname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(70, 70, 70, 0.8);
+  width: 8rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  border: none;
+  color: #fa4454;
+}
+
+.mapdivider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(70, 70, 70, 0.8);
+  width: 2rem;
+  height: 5rem;
+  font-size: 1.7rem;
+  border: none;
+  color: #343434;
+}
+
 .mapcard {
   display: flex;
   border-radius: 25px;
@@ -46,9 +70,4 @@
 
 .Split {
   background-image: url("splitbg.png");
-}
-
-.mapcardspacing {
-  width: 75vw;
-  height: 100vh;
 }
