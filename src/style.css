@@ -21,8 +21,10 @@
 }
 
 .topnavbar {
+  position:relative;
   display: flex;
   align-items: center;
+  z-index: 2;
   height: 10%;
   width: 100%;
   color: #fa4454;

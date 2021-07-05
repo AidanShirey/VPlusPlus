@@ -46,6 +46,7 @@
   overflow: hidden;
   background-color: black;
   background-size: cover;
+  z-index: 3;
 }
 
 .Ascent {

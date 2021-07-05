@@ -5,3 +5,32 @@
 .item{
     margin: 2rem;
 }
+
+.homepagecard{
+    border-radius: 25px;
+    background-color: #505050;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.homepagecardstripe1{
+    width: 8rem;
+    height: 100%;
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-275%, -50%) rotate(15deg);
+    z-index: -1;
+    background-color:#343434;
+}
+
+.homepagecardstripe2{
+    width: 8rem;
+    height: 100%;
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-100%, -50%) rotate(15deg);
+    z-index: -1;
+    background-color:#343434;
+}

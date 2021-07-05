@@ -5,3 +5,32 @@ hr {
   color: #fa4454;
   font-size: 4vw;
 }
+
+.mapsitepagecard{
+  border-radius: 25px;
+  background-color: #505050;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mapsitepagecardstripe1{
+  width: 8rem;
+  height: 100%;
+  position: absolute;
+  top: 50%;  
+  left: 50%;
+  transform: translate(-250%, -50%) rotate(15deg);
+  z-index: -1;
+  background-color:#343434;
+}
+
+.mapsitepagecardstripe2{
+  width: 8rem;
+  height: 100%;
+  position: absolute;
+  top: 50%;  
+  left: 50%;
+  transform: translate(-75%, -50%) rotate(15deg);
+  z-index: -1;
+  background-color:#343434;
+}
