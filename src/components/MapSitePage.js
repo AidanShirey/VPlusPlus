@@ -8,8 +8,10 @@ export default function MapSitePage(props) {
     return (
         <div>
             <div className="mapsitepagecard">
-                <div id="a-site" className="header row item">
-                    <strong>{props.name} A Site // {props.side}</strong>
+                <div className="mapsitepagecardstripe1"></div>
+                <div className="mapsitepagecardstripe2"></div>
+                <div id="a-site" className="mapsiteheader">
+                    <div className="headercontainer"><div className="mapsitehead"><strong>{props.name} A Site&nbsp;</strong></div><div className="mapsitedivider"><strong>//</strong></div><div className="mapsitetext"><strong>&nbsp;{props.side}</strong></div></div>
                     <CharacterSelect/>
                 </div>
                 <div className="row">
@@ -26,8 +28,10 @@ export default function MapSitePage(props) {
             </div>
             <br/>
             <div className="mapsitepagecard">
-                <div id="b-site" className="header row item">
-                    <strong>{props.name} B Site // {props.side}</strong>
+                <div className="mapsitepagecardstripe1"></div>
+                <div className="mapsitepagecardstripe2"></div>
+                <div id="a-site" className="mapsiteheader">
+                <div className="headercontainer"><div className="mapsitehead"><strong>{props.name} B Site&nbsp;</strong></div><div className="mapsitedivider"><strong> // </strong></div><div className="mapsitetext"><strong>&nbsp;{props.side}</strong></div></div>
                     <CharacterSelect/>
                 </div>
                 <div className="row">

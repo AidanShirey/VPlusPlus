@@ -1,12 +1,34 @@
 hr {
   min-width: 100%;
 }
-.header {
-  color: #fa4454;
+
+.headercontainer{
+  display:flex;
   font-size: 4vw;
+  margin: 2rem;
+}
+
+.mapsiteheader {
+  display:flex;
+  z-index: 3;
+}
+
+.mapsitehead{
+  color: #fa4454;
+}
+
+.mapsitedivider{
+  color:#343434;
+}
+
+.mapsitetext{
+  color: whitesmoke;
 }
 
 .mapsitepagecard{
+  display:flex;
+  position:relative;
+  flex-direction: column;
   border-radius: 25px;
   background-color: #505050;
   overflow: hidden;
@@ -15,22 +37,22 @@ hr {
 
 .mapsitepagecardstripe1{
   width: 8rem;
-  height: 100%;
+  height: 110%;
   position: absolute;
   top: 50%;  
   left: 50%;
   transform: translate(-250%, -50%) rotate(15deg);
-  z-index: -1;
+  z-index: 1;
   background-color:#343434;
 }
 
 .mapsitepagecardstripe2{
   width: 8rem;
-  height: 100%;
+  height: 110%;
   position: absolute;
   top: 50%;  
   left: 50%;
   transform: translate(-75%, -50%) rotate(15deg);
-  z-index: -1;
+  z-index: 1;
   background-color:#343434;
 }
