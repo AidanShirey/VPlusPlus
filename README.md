@@ -1,4 +1,4 @@
 # V++
 
-The Valorant Map Database.
+The Valorant lineup database.
 
