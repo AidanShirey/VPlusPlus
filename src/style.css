@@ -21,7 +21,7 @@
 }
 
 .topnavbar {
-  position:relative;
+  position: relative;
   display: flex;
   align-items: center;
   z-index: 2;
@@ -31,18 +31,18 @@
   background-color: #505050;
 }
 
-.row{
-  display:flex;
+.row {
+  display: flex;
 }
 
-.item{
+.item {
   margin: 2rem;
 }
 
 /* Text Classes */
 .logo {
   padding-left: 5%;
-  font-size: 3vw;
+  font-size: 60px;
   color: #fa4454;
 }
 
@@ -55,15 +55,19 @@
 
 .topnavtab {
   padding-right: 5%;
-  font-size: 1.5vw;
+  font-size: 28px;
 }
 
 /* Dropdown Button */
 .dropbtn {
   background-color: #505050;
-  color:whitesmoke;
-  font-size: 1.5vw;
+  color: whitesmoke;
+  font-size: 28px;
   border: none;
+}
+
+.dropbtn:hover {
+  color: #fa4454;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -84,7 +88,7 @@
 /* Links inside the dropdown */
 .dropdown-content a {
   color: #fa4454;
-  font-size: 1vw;
+  font-size: 18px;
   padding: 12px 16px;
   text-decoration: none;
   display: block;

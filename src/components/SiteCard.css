@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 30rem;
   height: 44rem;
+  margin: 0 2rem;
   border-radius: 25px;
   z-index: 3;
   overflow: hidden;
@@ -14,9 +15,9 @@
   z-index: 3;
 }
 
-.sitecardheader{
+.sitecardheader {
   font-size: 2rem;
-  color:#fa4454;
+  color: #fa4454;
   z-index: 3;
 }
 

@@ -1,39 +1,40 @@
-.row{
-    display:flex;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.item{
-    margin: 2rem;
+.item {
+  margin: 2rem auto;
 }
 
-.homepagecard{
-    display:flex;
-    position: relative;
-    flex-direction: column;
-    border-radius: 25px;
-    background-color: #505050;
-    overflow: hidden;
-    z-index: 1;
+.homepagecard {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-radius: 25px;
+  background-color: #505050;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.homepagecardstripe1{
-    width: 8rem;
-    height: 110%;
-    position: absolute;
-    top: 50%;  
-    left: 50%;
-    transform: translate(-275%, -50%) rotate(15deg);
-    z-index: -1;
-    background-color:#343434;
+.homepagecardstripe1 {
+  width: 8rem;
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-275%, -50%) rotate(15deg);
+  z-index: -1;
+  background-color: #343434;
 }
 
-.homepagecardstripe2{
-    width: 8rem;
-    height: 110%;
-    position: absolute;
-    top: 50%;  
-    left: 50%;
-    transform: translate(-100%, -50%) rotate(15deg);
-    z-index: -1;
-    background-color:#343434;
+.homepagecardstripe2 {
+  width: 8rem;
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%) rotate(15deg);
+  z-index: -1;
+  background-color: #343434;
 }
