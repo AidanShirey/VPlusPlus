@@ -152,6 +152,7 @@ body {
 
   .mobilenav {
     display: flex;
+    width: initial;
     margin: 0 auto;
   }
 
