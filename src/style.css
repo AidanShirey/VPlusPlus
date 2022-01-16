@@ -108,6 +108,7 @@ button {
 .dropdown {
   position: relative;
   display: inline-block;
+  float: right;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -116,6 +117,7 @@ button {
   position: absolute;
   background-color: black;
   min-width: 160px;
+  right: 0;
   z-index: 1;
 }
 
