@@ -22,7 +22,7 @@ hr {
 }
 
 .mapsitedivider {
-  color: #343434;
+  color: #505050;
   display: flex;
   margin: 0 1rem;
   align-items: center;
@@ -53,7 +53,7 @@ hr {
   left: 50%;
   transform: translate(-250%, -50%) rotate(15deg);
   z-index: 1;
-  background-color: black;
+  background-color: #343434;
 }
 
 .mapsitepagecardstripe2 {
@@ -64,102 +64,20 @@ hr {
   left: 50%;
   transform: translate(-75%, -50%) rotate(15deg);
   z-index: 1;
-  background-color: black;
-}
-
-.mapsitepagecard:nth-of-type(1) {
-  background-color: black;
-}
-
-.mapsitepagecard:nth-of-type(2) {
-  background-color: #364966;
-}
-
-.mapsitepagecard:nth-of-type(3) {
-  background-color: #042e27;
-}
-
-.mapsitepagecard:nth-of-type(1) .mapsitedivider {
-  color: #505050;
-}
-
-.mapsitepagecard:nth-of-type(2) .mapsitedivider {
-  color: black;
-}
-
-.mapsitepagecard:nth-of-type(3) .mapsitedivider {
-  color: black;
-}
-
-.mapsitepagecard:nth-of-type(1) .mapsitepagecardstripe1:nth-of-type(1) {
-  width: 8rem;
-  height: 110%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-250%, -50%) rotate(15deg);
-  z-index: 1;
-  background-color: #505050;
-}
-
-.mapsitepagecard:nth-of-type(1) .mapsitepagecardstripe2:nth-of-type(2) {
-  width: 8rem;
-  height: 110%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-75%, -50%) rotate(15deg);
-  z-index: 1;
-  background-color: #505050;
-}
-
-.mapsitepagecard:nth-of-type(2) .mapsitepagecardstripe1:nth-of-type(1) {
-  width: 8rem;
-  height: 110%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-250%, -50%) rotate(15deg);
-  z-index: 1;
-  background-color: black;
-}
-
-.mapsitepagecard:nth-of-type(2) .mapsitepagecardstripe2:nth-of-type(2) {
-  width: 8rem;
-  height: 110%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-75%, -50%) rotate(15deg);
-  z-index: 1;
-  background-color: black;
-}
-
-.mapsitepagecard:nth-of-type(3) .mapsitepagecardstripe1:nth-of-type(1) {
-  width: 8rem;
-  height: 110%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-250%, -50%) rotate(15deg);
-  z-index: 1;
-  background-color: black;
-}
-
-.mapsitepagecard:nth-of-type(3) .mapsitepagecardstripe2:nth-of-type(2) {
-  width: 8rem;
-  height: 110%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-75%, -50%) rotate(15deg);
-  z-index: 1;
-  background-color: black;
+  background-color: #343434;
 }
 
 @media (max-width: 425px) {
   .mapsitepagecard {
     margin: 2rem 0;
+  }
+
+  .mapsitepagecardstripe1 {
+    background-color: black;
+  }
+
+  .mapsitepagecardstripe2 {
+    background-color: black;
   }
 }
 

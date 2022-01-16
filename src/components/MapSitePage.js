@@ -5,7 +5,7 @@ import CharacterSelect from './CharacterSelect'
 
 
 export default function MapSitePage(props) {
-    if (props.name != "Haven"){
+    if (props.name !== "Haven"){
         return (
             <div className="mapsitepage">
                 <div className="mapsitepagecard">
