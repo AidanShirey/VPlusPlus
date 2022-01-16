@@ -58,7 +58,7 @@
 
 /* Text Classes */
 .logo {
-  margin-left: 5%;
+  margin-left: 2rem;
   font-size: 60px;
   color: #fa4454;
 }
@@ -78,6 +78,7 @@
 .desktopnav {
   display: flex;
   width: 100%;
+  margin-right: 2rem;
 }
 
 .mobilenav {

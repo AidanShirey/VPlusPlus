@@ -12,7 +12,7 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <div id='scroll' className="fullscreen">
         <NavBar />
-        <br/>
+
         <div className="contentarea">
           <ScrollToTop>
           <Switch>
@@ -23,6 +23,8 @@ function App() {
             <Route path="/attacking-bind" component={() => <MapSitePage name="Bind" side="Attacking"/>}/>
             <Route path="/defending-breeze" component={() => <MapSitePage name="Breeze" side="Defending"/>}/>
             <Route path="/attacking-breeze" component={() => <MapSitePage name="Breeze" side="Attacking"/>}/>
+            <Route path="/defending-fracture" component={() => <MapSitePage name="Fracture" side="Defending"/>}/>
+            <Route path="/attacking-fracture" component={() => <MapSitePage name="Fracture" side="Attacking"/>}/>
             <Route path="/defending-haven" component={() => <MapSitePage name="Haven" side="Defending"/>}/>
             <Route path="/attacking-haven" component={() => <MapSitePage name="Haven" side="Attacking"/>}/>
             <Route path="/defending-icebox" component={() => <MapSitePage name="Icebox" side="Defending"/>}/>
