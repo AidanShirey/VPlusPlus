@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import { Link } from 'react-router-dom';
 import Maptab from './Maptab';
+import MobileMaptab from './MobileMaptab';
 
 export class NavBar extends Component {
   render() {
@@ -10,12 +11,18 @@ export class NavBar extends Component {
               <strong>V++</strong>
             </Link>
             <div className="dividerline"> // </div>
-            <Maptab name="Ascent"/>
-            <Maptab name="Bind"/>
-            <Maptab name="Breeze"/>
-            <Maptab name="Haven"/>
-            <Maptab name="Icebox"/>
-            <Maptab name="Split"/>
+            <div className="desktopnav">
+              <Maptab name="Ascent"/>
+              <Maptab name="Bind"/>
+              <Maptab name="Breeze"/>
+              <Maptab name="Fracture"/>
+              <Maptab name="Haven"/>
+              <Maptab name="Icebox"/>
+              <Maptab name="Split"/>
+            </div>
+            <div className="mobilenav">
+              <MobileMaptab/>
+            </div>
         </div>
     );
   }

@@ -9,7 +9,24 @@
   left: 0;
   bottom: 0;
   right: 0;
-  overflow: auto;
+  overflow: hidden auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #343434;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .contentarea {
@@ -41,21 +58,30 @@
 
 /* Text Classes */
 .logo {
-  padding-left: 5%;
+  margin-left: 5%;
   font-size: 60px;
   color: #fa4454;
 }
 
 .dividerline {
-  padding-left: 5%;
-  padding-right: 5%;
-  font-size: 2vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 35px;
   color: #343434;
 }
 
 .topnavtab {
-  padding-right: 5%;
+  margin: 0 auto;
   font-size: 28px;
+}
+
+.desktopnav {
+  display: flex;
+  width: 100%;
+}
+
+.mobilenav {
+  display: none;
 }
 
 /* Dropdown Button */
@@ -113,4 +139,33 @@ body {
   color: whitesmoke;
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .desktopnav {
+    display: none;
+  }
+
+  .mobilenav {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .dropbtn {
+    font-size: 42px;
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+    color: #fa4454;
+  }
+
+  .dividerline {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    color: #343434;
+  }
 }

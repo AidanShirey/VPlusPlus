@@ -12,7 +12,7 @@ export default function MapSitePage(props) {
                     <div className="mapsitepagecardstripe1"></div>
                     <div className="mapsitepagecardstripe2"></div>
                     <div id="a-site" className="mapsiteheader">
-                        <div className="headercontainer"><div className="mapsitehead"><strong>{props.name} A Site&nbsp;</strong></div><div className="mapsitedivider"><strong>//</strong></div><div className="mapsitetext"><strong>&nbsp;{props.side}</strong></div></div>
+                        <div className="headercontainer"><div className="mapsitehead"><strong>{props.name} A Site&nbsp;</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>&nbsp;{props.side}</strong></div></div>
                         <CharacterSelect/>
                     </div>
                     <div className="row">
@@ -32,7 +32,7 @@ export default function MapSitePage(props) {
                     <div className="mapsitepagecardstripe1"></div>
                     <div className="mapsitepagecardstripe2"></div>
                     <div id="b-site" className="mapsiteheader">
-                    <div className="headercontainer"><div className="mapsitehead"><strong>{props.name} B Site&nbsp;</strong></div><div className="mapsitedivider"><strong> // </strong></div><div className="mapsitetext"><strong>&nbsp;{props.side}</strong></div></div>
+                    <div className="headercontainer"><div className="mapsitehead"><strong>{props.name} B Site&nbsp;</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>&nbsp;{props.side}</strong></div></div>
                         <CharacterSelect/>
                     </div>
                     <div className="row">
@@ -58,7 +58,7 @@ export default function MapSitePage(props) {
                 <div className="mapsitepagecardstripe1"></div>
                 <div className="mapsitepagecardstripe2"></div>
                 <div id="a-site" className="mapsiteheader">
-                    <div className="headercontainer"><div className="mapsitehead"><strong>{props.name} A Site&nbsp;</strong></div><div className="mapsitedivider"><strong>//</strong></div><div className="mapsitetext"><strong>&nbsp;{props.side}</strong></div></div>
+                    <div className="headercontainer"><div className="mapsitehead"><strong>{props.name} A Site&nbsp;</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>&nbsp;{props.side}</strong></div></div>
                     <CharacterSelect/>
                 </div>
                 <div className="row">
@@ -78,7 +78,7 @@ export default function MapSitePage(props) {
                 <div className="mapsitepagecardstripe1"></div>
                 <div className="mapsitepagecardstripe2"></div>
                 <div id="b-site" className="mapsiteheader">
-                <div className="headercontainer"><div className="mapsitehead"><strong>{props.name} B Site&nbsp;</strong></div><div className="mapsitedivider"><strong> // </strong></div><div className="mapsitetext"><strong>&nbsp;{props.side}</strong></div></div>
+                <div className="headercontainer"><div className="mapsitehead"><strong>{props.name} B Site&nbsp;</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>&nbsp;{props.side}</strong></div></div>
                     <CharacterSelect/>
                 </div>
                 <div className="row">
@@ -98,7 +98,7 @@ export default function MapSitePage(props) {
                 <div className="mapsitepagecardstripe1"></div>
                 <div className="mapsitepagecardstripe2"></div>
                 <div id="c-site" className="mapsiteheader">
-                <div className="headercontainer"><div className="mapsitehead"><strong>{props.name} C Site&nbsp;</strong></div><div className="mapsitedivider"><strong> // </strong></div><div className="mapsitetext"><strong>&nbsp;{props.side}</strong></div></div>
+                <div className="headercontainer"><div className="mapsitehead"><strong>{props.name} C Site&nbsp;</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>&nbsp;{props.side}</strong></div></div>
                     <CharacterSelect/>
                 </div>
                 <div className="row">
