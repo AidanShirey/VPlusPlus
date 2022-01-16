@@ -60,20 +60,16 @@
 /* Text Classes */
 .logo {
   display: flex;
-  width: 100%;
-  justify-content: center;
   margin-left: 2rem;
   font-size: 60px;
   color: #fa4454;
 }
 
 .dividerline {
-  display: flex;
-  width: 100%;
-  justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
   font-size: 35px;
+  display: flex;
   color: #505050;
 }
 
@@ -85,7 +81,6 @@
 .desktopnav {
   display: flex;
   width: 100%;
-  justify-content: center;
   margin-right: 2rem;
 }
 
@@ -157,8 +152,6 @@ body {
 
   .mobilenav {
     display: flex;
-    width: 100%;
-    justify-content: center;
     margin: 0 auto;
   }
 
