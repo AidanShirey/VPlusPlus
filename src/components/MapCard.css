@@ -67,6 +67,27 @@
   }
 }
 
+@media (max-width: 425px) {
+  .mapcard {
+    width: 19.4rem;
+    height: 13rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .mapname {
+    font-size: 1rem;
+  }
+
+  .mapdivider {
+    font-size: 1.2rem;
+  }
+
+  .mapbutton {
+    font-size: 1rem;
+  }
+}
+
 .Ascent {
   background-image: url("ascentbg.png");
 }

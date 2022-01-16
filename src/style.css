@@ -172,4 +172,10 @@ body {
 }
 
 @media (max-width: 425px) {
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+    color: #fa4454;
+  }
 }

@@ -1,5 +1,6 @@
 .row {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -12,7 +13,7 @@
   position: relative;
   flex-direction: column;
   border-radius: 25px;
-  margin: 2rem;
+  margin: 2rem 0;
   background-color: black;
   overflow: hidden;
   z-index: 1;
@@ -38,4 +39,18 @@
   transform: translate(-100%, -50%) rotate(15deg);
   z-index: -1;
   background-color: #343434;
+}
+
+@media (max-width: 425px) {
+  .homepagecardstripe1 {
+    background-color: black;
+  }
+
+  .homepagecardstripe2 {
+    background-color: black;
+  }
+
+  .item {
+    margin: 2rem 0;
+  }
 }
