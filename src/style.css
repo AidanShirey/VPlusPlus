@@ -45,7 +45,7 @@
   height: 10%;
   width: 100%;
   color: #fa4454;
-  background-color: #505050;
+  background-color: black;
 }
 
 .row {
@@ -67,7 +67,7 @@
   margin-left: 5%;
   margin-right: 5%;
   font-size: 35px;
-  color: #343434;
+  color: #505050;
 }
 
 .topnavtab {
@@ -87,7 +87,6 @@
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #505050;
   color: whitesmoke;
   font-size: 28px;
   border: none;
@@ -107,7 +106,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #404040;
+  background-color: black;
   min-width: 160px;
   z-index: 1;
 }
