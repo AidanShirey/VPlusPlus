@@ -13,7 +13,7 @@
   position: relative;
   flex-direction: column;
   border-radius: 25px;
-  margin: 2rem 0;
+  margin: 2rem;
   background-color: black;
   overflow: hidden;
   z-index: 1;
@@ -51,6 +51,10 @@
   }
 
   .item {
+    margin: 2rem 0;
+  }
+
+  .homepagecard {
     margin: 2rem 0;
   }
 }
