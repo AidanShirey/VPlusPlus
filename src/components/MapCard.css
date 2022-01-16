@@ -55,6 +55,18 @@
   z-index: 3;
 }
 
+@media (max-width: 1024px) {
+  .mapcard {
+    width: 27rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mapcard {
+    width: 26rem;
+  }
+}
+
 .Ascent {
   background-image: url("ascentbg.png");
 }

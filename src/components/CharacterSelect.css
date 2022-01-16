@@ -27,3 +27,13 @@
 .imageportraitcontainer:hover {
   border: 0.5rem solid #fa4454;
 }
+
+@media (max-width: 1024px) {
+  .imageportraitcontainer {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+}

@@ -9,6 +9,13 @@
   overflow: hidden;
 }
 
+@media (max-width: 425px) {
+  .sitecard {
+    margin: 0;
+    width: 26rem;
+  }
+}
+
 .sitecardlineup {
   width: 100%;
   height: 100%;
