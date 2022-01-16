@@ -40,6 +40,7 @@
 .topnavbar {
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   z-index: 2;
   height: 10%;
@@ -58,6 +59,7 @@
 
 /* Text Classes */
 .logo {
+  display: flex;
   margin-left: 2rem;
   font-size: 60px;
   color: #fa4454;
@@ -67,6 +69,7 @@
   margin-left: 5%;
   margin-right: 5%;
   font-size: 35px;
+  display: flex;
   color: #505050;
 }
 
