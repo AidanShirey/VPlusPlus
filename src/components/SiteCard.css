@@ -5,6 +5,8 @@
   height: 44rem;
   margin: 0 1rem;
   border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
   z-index: 3;
   overflow: hidden;
 }
