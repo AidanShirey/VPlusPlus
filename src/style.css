@@ -88,6 +88,10 @@
   display: none;
 }
 
+button {
+  padding: 0;
+}
+
 /* Dropdown Button */
 .dropbtn {
   color: whitesmoke;
@@ -181,13 +185,13 @@ body {
   .logo {
     margin-left: auto;
     margin-right: auto;
-    width: 33%;
+    width: 33.3%;
     font-size: 60px;
     color: #fa4454;
   }
 
   .dividerline {
-    width: 33%;
+    width: 33.3%;
     justify-content: center;
     font-size: 35px;
     display: flex;
@@ -196,7 +200,7 @@ body {
 
   .mobilenav {
     display: flex;
-    width: 33%;
+    width: 33.4%;
     margin: 0 auto;
   }
 }
