@@ -59,7 +59,7 @@
 
 /* Text Classes */
 .logo {
-  display: flex;
+  display: inline-block;
   margin-left: 2rem;
   font-size: 60px;
   color: #fa4454;
@@ -69,7 +69,7 @@
   margin-left: 5%;
   margin-right: 5%;
   font-size: 35px;
-  display: flex;
+  display: inline-block;
   color: #505050;
 }
 
