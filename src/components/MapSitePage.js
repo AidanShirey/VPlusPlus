@@ -2,46 +2,12 @@ import React, {useState} from 'react'
 import './MapSitePage.css'
 import SiteCard from './SiteCard'
 import CharacterSelect from './CharacterSelect'
-import { initializeApp } from "firebase/app"
-import { getDatabase, ref, child, get } from "firebase/database"
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyAd3JIcPWlZ5dtllHg15Cogya9HqEs1sWE",
-  authDomain: "vplusplus-8bb54.firebaseapp.com",
-  databaseURL: "https://vplusplus-8bb54-default-rtdb.firebaseio.com",
-  projectId: "vplusplus-8bb54",
-  storageBucket: "vplusplus-8bb54.appspot.com",
-  messagingSenderId: "941977342831",
-  appId: "1:941977342831:web:2d69a3bd598f91ffc74e9a"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-const dbRef = ref(getDatabase());
 var defaultcount = 1;
 
 
 
 export default function MapSitePage(props) {
-    const [ lineupVideo, setlineupVideo ] = useState();
-    const [ lineupName, setlineupName] = useState();
-    const [ lineupDescription, setlineupDescription ] = useState();
     if (props.name !== "Haven"){
-        get(child(dbRef, `${props.name}/${props.side}/DefaultSpread/Lineup${defaultcount}`)).then((snapshot) => {
-        if (snapshot.exists()) {
-            setlineupVideo(snapshot.val().LineupVideo);
-            setlineupName(snapshot.val().LineupName);
-            setlineupDescription(snapshot.val().LineupDescription);          
-            } else {
-              console.log("No data available");
-            }
-          }).catch((error) => {
-            console.error(error);
-          });
         return (
             <div className="mapsitepage">
                 <div className="mapsitepagecard">
@@ -53,13 +19,13 @@ export default function MapSitePage(props) {
                     </div>
                     <div id="a-site-row" className="row">
                         <div className="item">
-                            <SiteCard name={lineupName} video={lineupVideo} desc={lineupDescription}/>
+                            <SiteCard name={props.name} side={props.side} defaultcount={1}/>
                         </div>
                         <div className="item">
-                            <SiteCard name="Heaven to Generator" desc=""/>
+                            <SiteCard name={props.name} side={props.side} defaultcount={2}/>
                         </div>
                         <div className="item">
-                            <SiteCard name="Heaven to Mid" desc=""/>
+                            <SiteCard name={props.name} side={props.side} defaultcount={3}/>
                         </div>
                     </div>
                 </div>
@@ -73,13 +39,13 @@ export default function MapSitePage(props) {
                     </div>
                     <div id="b-site-row" className="row">
                         <div className="item">
-                            <SiteCard name="CT to Main Arch"/>
+                            <SiteCard name={props.name} side={props.side} defaultcount={1}/>
                         </div>
                         <div className="item">
-                            <SiteCard name="CT to Site"/>
+                            <SiteCard name={props.name} side={props.side} defaultcount={2}/>
                         </div>
                         <div className="item">
-                            <SiteCard name="CT to Market"/>
+                            <SiteCard name={props.name} side={props.side} defaultcount={3}/>
                         </div>
                     </div>
                 </div>
@@ -99,13 +65,13 @@ export default function MapSitePage(props) {
                 </div>
                 <div id="a-site-row" className="row">
                     <div className="item">
-                        <SiteCard name="Heaven to Site"/>
+                        <SiteCard name={props.name} side={props.side} defaultcount={1}/>
                     </div>
                     <div className="item">
-                        <SiteCard name="Heaven to Generator"/>
+                        <SiteCard name={props.name} side={props.side} defaultcount={2}/>
                     </div>
                     <div className="item">
-                        <SiteCard name="Heaven to Mid"/>
+                        <SiteCard name={props.name} side={props.side} defaultcount={3}/>
                     </div>
                 </div>
             </div>
@@ -119,13 +85,13 @@ export default function MapSitePage(props) {
                 </div>
                 <div id="b-site-row" className="row">
                     <div className="item">
-                        <SiteCard name="CT to Main Arch"/>
+                        <SiteCard name={props.name} side={props.side} defaultcount={1}/>
                     </div>
                     <div className="item">
-                        <SiteCard name="CT to Site"/>
+                        <SiteCard name={props.name} side={props.side} defaultcount={2}/>
                     </div>
                     <div className="item">
-                        <SiteCard name="CT to Market"/>
+                        <SiteCard name={props.name} side={props.side} defaultcount={3}/>
                     </div>
                 </div>
             </div>
@@ -139,13 +105,13 @@ export default function MapSitePage(props) {
                 </div>
                 <div id="c-site-row" className="row">
                     <div className="item">
-                        <SiteCard name="Window to Default"/>
+                        <SiteCard name={props.name} side={props.side} defaultcount={1}/>
                     </div>
                     <div className="item">
-                        <SiteCard name="Window to Back-site"/>
+                        <SiteCard name={props.name} side={props.side} defaultcount={2}/>
                     </div>
                     <div className="item">
-                        <SiteCard name="Mid to A-side plant"/>
+                        <SiteCard name={props.name} side={props.side} defaultcount={3}/>
                     </div>
                 </div>
             </div>
