@@ -13,7 +13,7 @@ export default function SiteCard(props) {
                 <hr/>
                 <hr/>
                 <p>
-                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis justo quis ex pellentesque, sit amet sodales libero tincidunt. Etiam tortor felis, mollis nec eros at, tempor tempus nunc. Cras luctus, nisi sollicitudin dignissim vestibulum, sapien felis consectetur dolor, nec luctus ex enim eu arcu.</strong>
+                    <strong>{props.desc}</strong>
                 </p>
             </div>
         </div>

@@ -6,7 +6,6 @@ import ScrollToTop from './components/ScrollToTop'
 import {HashRouter as Router, Route, Switch, withRouter} from "react-router-dom"
 
 
-
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
