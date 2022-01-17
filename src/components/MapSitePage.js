@@ -2,9 +2,6 @@ import React, {useState} from 'react'
 import './MapSitePage.css'
 import SiteCard from './SiteCard'
 import CharacterSelect from './CharacterSelect'
-var defaultcount = 1;
-
-
 
 export default function MapSitePage(props) {
     if (props.name !== "Haven"){
@@ -19,13 +16,13 @@ export default function MapSitePage(props) {
                     </div>
                     <div id="a-site-row" className="row">
                         <div className="item">
-                            <SiteCard name={props.name} side={props.side} site="A-Site" defaultcount={1}/>
+                            <SiteCard name={props.name} side={props.side} site="A-Site" sort="DefaultSpread" count={1}/>
                         </div>
                         <div className="item">
-                            <SiteCard name={props.name} side={props.side} site="A-Site" defaultcount={2}/>
+                            <SiteCard name={props.name} side={props.side} site="A-Site" sort="DefaultSpread" count={2}/>
                         </div>
                         <div className="item">
-                            <SiteCard name={props.name} side={props.side} site="A-Site" defaultcount={3}/>
+                            <SiteCard name={props.name} side={props.side} site="A-Site" sort="DefaultSpread" count={3}/>
                         </div>
                     </div>
                 </div>
@@ -39,13 +36,13 @@ export default function MapSitePage(props) {
                     </div>
                     <div id="b-site-row" className="row">
                         <div className="item">
-                            <SiteCard name={props.name} side={props.side} site="B-Site" defaultcount={1}/>
+                            <SiteCard name={props.name} side={props.side} site="B-Site" sort="DefaultSpread" count={1}/>
                         </div>
                         <div className="item">
-                            <SiteCard name={props.name} side={props.side} site="B-Site" defaultcount={2}/>
+                            <SiteCard name={props.name} side={props.side} site="B-Site" sort="DefaultSpread" count={2}/>
                         </div>
                         <div className="item">
-                            <SiteCard name={props.name} side={props.side} site="B-Site" defaultcount={3}/>
+                            <SiteCard name={props.name} side={props.side} site="B-Site" sort="DefaultSpread" count={3}/>
                         </div>
                     </div>
                 </div>
@@ -65,13 +62,13 @@ export default function MapSitePage(props) {
                 </div>
                 <div id="a-site-row" className="row">
                     <div className="item">
-                        <SiteCard name={props.name} side={props.side} site="A-Site" defaultcount={1}/>
+                        <SiteCard name={props.name} side={props.side} site="A-Site" sort="DefaultSpread" count={1}/>
                     </div>
                     <div className="item">
-                        <SiteCard name={props.name} side={props.side} site="A-Site" defaultcount={2}/>
+                        <SiteCard name={props.name} side={props.side} site="A-Site" sort="DefaultSpread" count={2}/>
                     </div>
                     <div className="item">
-                        <SiteCard name={props.name} side={props.side} site="A-Site" defaultcount={3}/>
+                        <SiteCard name={props.name} side={props.side} site="A-Site" sort="DefaultSpread" count={3}/>
                     </div>
                 </div>
             </div>
@@ -85,13 +82,13 @@ export default function MapSitePage(props) {
                 </div>
                 <div id="b-site-row" className="row">
                     <div className="item">
-                        <SiteCard name={props.name} side={props.side} site="B-Site" defaultcount={1}/>
+                        <SiteCard name={props.name} side={props.side} site="B-Site" sort="DefaultSpread" count={1}/>
                     </div>
                     <div className="item">
-                        <SiteCard name={props.name} side={props.side} site="B-Site" defaultcount={2}/>
+                        <SiteCard name={props.name} side={props.side} site="B-Site" sort="DefaultSpread" count={2}/>
                     </div>
                     <div className="item">
-                        <SiteCard name={props.name} side={props.side} site="B-Site" defaultcount={3}/>
+                        <SiteCard name={props.name} side={props.side} site="B-Site" sort="DefaultSpread" count={3}/>
                     </div>
                 </div>
             </div>
@@ -105,13 +102,13 @@ export default function MapSitePage(props) {
                 </div>
                 <div id="c-site-row" className="row">
                     <div className="item">
-                        <SiteCard name={props.name} side={props.side} site="C-Site" defaultcount={1}/>
+                        <SiteCard name={props.name} side={props.side} site="C-Site" sort="DefaultSpread" count={1}/>
                     </div>
                     <div className="item">
-                        <SiteCard name={props.name} side={props.side} site="C-Site" defaultcount={2}/>
+                        <SiteCard name={props.name} side={props.side} site="C-Site" sort="DefaultSpread" count={2}/>
                     </div>
                     <div className="item">
-                        <SiteCard name={props.name} side={props.side} site="C-Site" defaultcount={3}/>
+                        <SiteCard name={props.name} side={props.side} site="C-Site" sort="DefaultSpread" count={3}/>
                     </div>
                 </div>
             </div>
