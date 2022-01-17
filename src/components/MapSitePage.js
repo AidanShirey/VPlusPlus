@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './MapSitePage.css'
 import SiteCard from './SiteCard'
 import CharacterSelect from './CharacterSelect'
@@ -22,17 +22,20 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const dbRef = ref(getDatabase());
+var defaultcount = 1;
+
 
 
 export default function MapSitePage(props) {
+    const [ lineupVideo, setlineupVideo ] = useState();
+    const [ lineupName, setlineupName] = useState();
+    const [ lineupDescription, setlineupDescription ] = useState();
     if (props.name !== "Haven"){
-        var defaultcount = 1;
-
         get(child(dbRef, `${props.name}/${props.side}/DefaultSpread/Lineup${defaultcount}`)).then((snapshot) => {
-            if (snapshot.exists()) {
-              console.log(snapshot.val().LineupName);
-              console.log(snapshot.val().LineupDescription);
-              console.log(snapshot.val().LineupVideo);              
+        if (snapshot.exists()) {
+            setlineupVideo(snapshot.val().LineupVideo);
+            setlineupName(snapshot.val().LineupName);
+            setlineupDescription(snapshot.val().LineupDescription);          
             } else {
               console.log("No data available");
             }
@@ -50,7 +53,7 @@ export default function MapSitePage(props) {
                     </div>
                     <div id="a-site-row" className="row">
                         <div className="item">
-                            <SiteCard name="Heaven to Site" desc="Something about the lineup, provide details and visual tips to assist the player in achieving the intended result easier."/>
+                            <SiteCard name={lineupName} video={lineupVideo} desc={lineupDescription}/>
                         </div>
                         <div className="item">
                             <SiteCard name="Heaven to Generator" desc=""/>
