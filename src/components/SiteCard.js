@@ -23,42 +23,40 @@ const dbRef = ref(getDatabase());
 
 
 export default function SiteCard(props) {
-        const [ lineupVideo, setlineupVideo ] = useState();
-        const [ lineupName, setlineupName] = useState();
-        const [ lineupDescription, setlineupDescription ] = useState();
-        useEffect(() => {
-          let cancel = false;
-          if (cancel) return;
-          get(child(dbRef, `${props.name}/${props.side}/${props.site}/${props.sort}/Lineup${props.count}`)).then((snapshot) => {
-            if (snapshot.exists()) {
-                setlineupVideo(snapshot.val().LineupVideo);
-                setlineupName(snapshot.val().LineupName);
-                setlineupDescription(snapshot.val().LineupDescription);          
-                } else {
-                  console.log("No data available");
-                }
-              }).catch((error) => {
-                console.error(error);
-              }); 
-            return () => {
-                cancel = true;
-            }
-        }, [props.name, props.side, props.site, props.sort, props.count]);
-  
-        return (
-            <div className="sitecard">
-                <video className="sitecardlineup" src={lineupVideo} controls>
-                </video>
-                <div className="sitecarddesc">
-                    <div className="sitecardheader">
-                        <strong>{lineupName}</strong>
-                    </div>
-                    <hr/>
-                    <hr/>
-                    <p>
-                        <strong>{lineupDescription}</strong>
-                    </p>
-                </div>
-            </div>
-        )       
+  const [ lineupVideo, setlineupVideo ] = useState();
+  const [ lineupName, setlineupName] = useState();
+  const [ lineupDescription, setlineupDescription ] = useState();
+  useEffect(() => {
+    
+    get(child(dbRef, `${props.name}/${props.side}/${props.site}/${props.sort}/Lineup${props.count}`)).then((snapshot) => {
+      if (snapshot.exists()) {
+        setlineupVideo(snapshot.val().LineupVideo);
+        setlineupName(snapshot.val().LineupName);
+        setlineupDescription(snapshot.val().LineupDescription);          
+        } else {
+          console.log("No data available");
+        }
+        }).catch((error) => {
+          console.error(error);
+        }); 
+        
+    }, [props.sort]);
+
+    return (
+      <div className="sitecard">
+        <video className="sitecardlineup" src={lineupVideo} controls>
+        </video>
+        <div className="sitecarddesc">
+          <div className="sitecardheader">
+            <strong>{lineupName}</strong>
+          </div>
+          <hr/>
+          <hr/>
+          <p>
+            <strong>{lineupDescription}</strong>
+          </p>
+          </div>
+      </div>
+    ) 
+          
 }

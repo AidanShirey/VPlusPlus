@@ -101,3 +101,44 @@ hr {
     display: none;
   }
 }
+
+/*CHARACTER SELECT CSS*/
+.charselect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portraits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.description {
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+.imageportraitcontainer {
+  width: 5rem;
+  height: 5rem;
+  margin-left: 2rem;
+  border-radius: 50%;
+}
+
+.imageportraitcontainer:hover {
+  border: 0.5rem solid #fa4454;
+}
+
+@media (max-width: 1024px) {
+  .imageportraitcontainer {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+}

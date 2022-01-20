@@ -3,6 +3,7 @@ import './SiteCard'
 import { initializeApp } from "firebase/app"
 import { getDatabase, ref, child, get, firebase} from "firebase/database"
 import SiteCard from './SiteCard';
+import { render } from '@testing-library/react';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -21,12 +22,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const dbRef = ref(getDatabase());
+
 export default function MapSitePageRow(props){
     const [itemList, setitemList] = useState();
     useEffect(() => {
-    let cancel = false;
-    if (cancel) return;
-    get(child(dbRef, `${props.name}/${props.side}/${props.site}/${props.sort}/`)).then((snapshot) => {
+      let cancel = false;
+      if (cancel) return;
+      get(child(dbRef, `${props.name}/${props.side}/${props.site}/${props.sort}/`)).then((snapshot) => {
         if (snapshot.exists()) {
             let total = snapshot.size;
             let child = 1;
@@ -40,7 +42,6 @@ export default function MapSitePageRow(props){
                 } 
                 setitemList(items);
             }
-
             } else {
               console.log("No data available");
             }
@@ -50,7 +51,7 @@ export default function MapSitePageRow(props){
           return () => {
             cancel = true;
           }
-        }, []);
+        }, [props.sort]);
 
     return (
         <div className='row'>
