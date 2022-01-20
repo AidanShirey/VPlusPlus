@@ -27,7 +27,7 @@
   left: 50%;
   transform: translate(-275%, -50%) rotate(15deg);
   z-index: -1;
-  background-color: #343434;
+  background-color: #1a1a1a;
 }
 
 .homepagecardstripe2 {
@@ -38,7 +38,7 @@
   left: 50%;
   transform: translate(-100%, -50%) rotate(15deg);
   z-index: -1;
-  background-color: #343434;
+  background-color: #1a1a1a;
 }
 
 @media (max-width: 425px) {

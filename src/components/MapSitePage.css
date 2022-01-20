@@ -53,7 +53,7 @@ hr {
   left: 50%;
   transform: translate(-250%, -50%) rotate(15deg);
   z-index: 1;
-  background-color: #343434;
+  background-color: #1a1a1a;
 }
 
 .mapsitepagecardstripe2 {
@@ -64,7 +64,7 @@ hr {
   left: 50%;
   transform: translate(-75%, -50%) rotate(15deg);
   z-index: 1;
-  background-color: #343434;
+  background-color: #1a1a1a;
 }
 
 @media (max-width: 425px) {
