@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './SiteCard.css'
 import { initializeApp } from "firebase/app"
 import { getDatabase, ref, child, get } from "firebase/database"
@@ -26,17 +26,25 @@ export default function SiteCard(props) {
         const [ lineupVideo, setlineupVideo ] = useState();
         const [ lineupName, setlineupName] = useState();
         const [ lineupDescription, setlineupDescription ] = useState();
-        get(child(dbRef, `${props.name}/${props.side}/${props.site}/${props.sort}/Lineup${props.count}`)).then((snapshot) => {
-        if (snapshot.exists()) {
-            setlineupVideo(snapshot.val().LineupVideo);
-            setlineupName(snapshot.val().LineupName);
-            setlineupDescription(snapshot.val().LineupDescription);          
-            } else {
-              console.log("No data available");
+        useEffect(() => {
+          let cancel = false;
+          if (cancel) return;
+          get(child(dbRef, `${props.name}/${props.side}/${props.site}/${props.sort}/Lineup${props.count}`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                setlineupVideo(snapshot.val().LineupVideo);
+                setlineupName(snapshot.val().LineupName);
+                setlineupDescription(snapshot.val().LineupDescription);          
+                } else {
+                  console.log("No data available");
+                }
+              }).catch((error) => {
+                console.error(error);
+              }); 
+            return () => {
+                cancel = true;
             }
-          }).catch((error) => {
-            console.error(error);
-          });  
+        }, [props.name, props.side, props.site, props.sort, props.count]);
+  
         return (
             <div className="sitecard">
                 <video className="sitecardlineup" src={lineupVideo} controls>

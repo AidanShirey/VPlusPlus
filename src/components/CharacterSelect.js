@@ -4,6 +4,14 @@ import sova from './sovaportrait.jpg'
 import cypher from './cypherportrait.jpg'
 
 export default function CharacterSelect() {
+    /*
+    function characterSwitch(){
+        const element = (<div>
+            <h1>Hello, world!</h1>
+            <h2>It is {new Date().toLocaleTimeString()}.</h2>
+        </div>)
+    }
+    */
     return (
         <div className="charselect">
             <div className="portraits">

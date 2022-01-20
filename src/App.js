@@ -3,7 +3,7 @@ import {NavBar} from './components/NavBar'
 import Homepage from './components/Homepage'
 import MapSitePage from './components/MapSitePage'
 import ScrollToTop from './components/ScrollToTop'
-import {HashRouter as Router, Route, Switch, withRouter} from "react-router-dom"
+import {HashRouter as Router, Route, Switch} from "react-router-dom"
 
 
 function App() {
