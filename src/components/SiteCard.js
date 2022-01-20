@@ -2,10 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './SiteCard.css'
 import { initializeApp } from "firebase/app"
 import { getDatabase, ref, child, get } from "firebase/database"
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAd3JIcPWlZ5dtllHg15Cogya9HqEs1sWE",
   authDomain: "vplusplus-8bb54.firebaseapp.com",
@@ -16,8 +13,8 @@ const firebaseConfig = {
   appId: "1:941977342831:web:2d69a3bd598f91ffc74e9a"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+
+initializeApp(firebaseConfig);
 
 const dbRef = ref(getDatabase());
 

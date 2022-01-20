@@ -1,13 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import './SiteCard'
 import { initializeApp } from "firebase/app"
-import { getDatabase, ref, child, get, firebase} from "firebase/database"
+import { getDatabase, ref, child, get} from "firebase/database"
 import SiteCard from './SiteCard';
-import { render } from '@testing-library/react';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAd3JIcPWlZ5dtllHg15Cogya9HqEs1sWE",
   authDomain: "vplusplus-8bb54.firebaseapp.com",
@@ -17,17 +12,13 @@ const firebaseConfig = {
   messagingSenderId: "941977342831",
   appId: "1:941977342831:web:2d69a3bd598f91ffc74e9a"
 };
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
 const dbRef = ref(getDatabase());
 
 export default function MapSitePageRow(props){
     const [itemList, setitemList] = useState();
     useEffect(() => {
-      let cancel = false;
-      if (cancel) return;
       get(child(dbRef, `${props.name}/${props.side}/${props.site}/${props.sort}/`)).then((snapshot) => {
         if (snapshot.exists()) {
             let total = snapshot.size;
@@ -48,9 +39,6 @@ export default function MapSitePageRow(props){
           }).catch((error) => {
             console.error(error);
           }); 
-          return () => {
-            cancel = true;
-          }
         }, [props.sort]);
 
     return (
