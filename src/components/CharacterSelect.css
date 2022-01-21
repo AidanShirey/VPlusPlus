@@ -1,7 +1,19 @@
 .charselect {
   display: flex;
+  margin: 0 auto;
+  padding: 1rem 2rem;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.charselectrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portraitcontainer {
+  display: flex;
   flex-direction: column;
 }
 
@@ -18,9 +30,10 @@
 }
 
 .imageportraitcontainer {
-  width: 5rem;
-  height: 5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   margin-left: 2rem;
+  margin-top: 0.5rem;
   border-radius: 50%;
 }
 
@@ -30,8 +43,8 @@
 
 @media (max-width: 1024px) {
   .imageportraitcontainer {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
     border-radius: 50%;

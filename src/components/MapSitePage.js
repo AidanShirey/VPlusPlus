@@ -26,8 +26,9 @@ export default class MapSitePage extends React.Component{
                         <div className="mapsitepagecardstripe1"></div>
                         <div className="mapsitepagecardstripe2"></div>
                         <div id="a-site" className="mapsiteheader">
-                            <div className="headercontainer"><div className="mapsitehead"><strong>{this.name} A Site</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>{this.side}</strong></div></div>
+                            <div className="headercontainer"><div className="mapsitehead"><strong>{this.name} A Site</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>{this.side}</strong></div>
                             <CharacterSelect handler={this.setState}/>
+                            </div>
                         </div>
                         <MapSitePageRow name={this.name} side={this.side} site="A-Site" sort={this.state.lineupSort}/>
                     </div>
@@ -36,8 +37,9 @@ export default class MapSitePage extends React.Component{
                         <div className="mapsitepagecardstripe1"></div>
                         <div className="mapsitepagecardstripe2"></div>
                         <div id="b-site" className="mapsiteheader">
-                        <div className="headercontainer"><div className="mapsitehead"><strong>{this.name} B Site</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>{this.side}</strong></div></div>
+                        <div className="headercontainer"><div className="mapsitehead"><strong>{this.name} B Site</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>{this.side}</strong></div>
                             <CharacterSelect handler={this.setState}/>
+                        </div>
                         </div>
                         <MapSitePageRow name={this.name} side={this.side} site="B-Site" sort={this.state.lineupSort}/>
                     </div>
@@ -52,8 +54,9 @@ export default class MapSitePage extends React.Component{
                     <div className="mapsitepagecardstripe1"></div>
                     <div className="mapsitepagecardstripe2"></div>
                     <div id="a-site" className="mapsiteheader">
-                        <div className="headercontainer"><div className="mapsitehead"><strong>{this.name} A Site</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>{this.side}</strong></div></div>
+                        <div className="headercontainer"><div className="mapsitehead"><strong>{this.name} A Site</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>{this.side}</strong></div>
                         <CharacterSelect handler={this.setState}/>
+                        </div>
                     </div>
                     <MapSitePageRow name={this.name} side={this.side} site="A-Site" sort={this.state.lineupSort}/>
                 </div>
@@ -62,8 +65,10 @@ export default class MapSitePage extends React.Component{
                     <div className="mapsitepagecardstripe1"></div>
                     <div className="mapsitepagecardstripe2"></div>
                     <div id="b-site" className="mapsiteheader">
-                    <div className="headercontainer"><div className="mapsitehead"><strong>{this.name} B Site</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>{this.side}</strong></div></div>
+                    <div className="headercontainer">
+                        <div className="mapsitehead"><strong>{this.name} B Site</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>{this.side}</strong></div>
                         <CharacterSelect handler={this.setState}/>
+                        </div>
                     </div>
                     <MapSitePageRow name={this.name} side={this.side} site="C-Site" sort={this.state.lineupSort}/>
                 </div>
@@ -72,8 +77,9 @@ export default class MapSitePage extends React.Component{
                     <div className="mapsitepagecardstripe1"></div>
                     <div className="mapsitepagecardstripe2"></div>
                     <div id="c-site" className="mapsiteheader">
-                    <div className="headercontainer"><div className="mapsitehead"><strong>{this.name} C Site</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>{this.side}</strong></div></div>
-                        <CharacterSelect handler={this.setState}/>
+                    <div className="headercontainer"><div className="mapsitehead"><strong>{this.name} C Site</strong></div><div className="mapsitedivider">//</div><div className="mapsitetext"><strong>{this.side}</strong></div>
+                    <CharacterSelect handler={this.setState}/>
+                    </div>
                     </div>
                     <MapSitePageRow name={this.name} side={this.side} site="C-Site" sort={this.state.lineupSort}/>
                 </div>

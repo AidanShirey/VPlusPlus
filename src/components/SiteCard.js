@@ -24,7 +24,6 @@ export default function SiteCard(props) {
   const [ lineupName, setlineupName] = useState();
   const [ lineupDescription, setlineupDescription ] = useState();
   useEffect(() => {
-    
     get(child(dbRef, `${props.name}/${props.side}/${props.site}/${props.sort}/Lineup${props.count}`)).then((snapshot) => {
       if (snapshot.exists()) {
         setlineupVideo(snapshot.val().LineupVideo);
@@ -43,6 +42,7 @@ export default function SiteCard(props) {
       <div className="sitecard">
         <video className="sitecardlineup" src={lineupVideo} controls>
         </video>
+        <div className="sitecardtrim">
         <div className="sitecarddesc">
           <div className="sitecardheader">
             <strong>{lineupName}</strong>
@@ -53,6 +53,7 @@ export default function SiteCard(props) {
             <strong>{lineupDescription}</strong>
           </p>
           </div>
+        </div>
       </div>
     ) 
           
