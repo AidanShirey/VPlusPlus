@@ -1,0 +1,68 @@
+.siteswitcher {
+  width: 424px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.stripecontainer {
+  position: relative;
+}
+
+.a-site-starter {
+  width: 40px;
+  height: 130%;
+  transform: translate(5px, 0px) rotate(15deg);
+  background-color: #b78460;
+}
+
+.a-site-ender {
+  width: 40px;
+  height: 130%;
+  transform: translate(-5px, 0px) rotate(15deg);
+  background-color: #b78460;
+}
+
+.a-site {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  color: #364966;
+  background-color: #b78460;
+}
+
+.b-site-starter {
+  width: 40px;
+  height: 130%;
+  transform: translate(5px, 0px) rotate(15deg);
+  background-color: #364966;
+}
+
+.b-site-ender {
+  width: 40px;
+  height: 130%;
+  transform: translate(-5px, 0px) rotate(15deg);
+  background-color: #364966;
+}
+
+.b-site {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #b78460;
+  background-color: #364966;
+}
+
+.c-site {
+  width: 100%;
+  display: flex;
+  background-color: #042e27;
+}

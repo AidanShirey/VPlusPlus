@@ -26,13 +26,13 @@ export default class CharacterSelect extends React.Component{
                 <div className="portraits">
                     <div className='portraitcontainer'>
                     <div className='charselectrow'>
-                        <img className="imageportraitcontainer" src={controller} alt="Controller"></img>
+                        <img className="roleportraitcontainer" src={controller} alt="Controller"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Brimstone'})} className="imageportraitcontainer" src={brimstone} alt="Brimstone"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Omen'})} className="imageportraitcontainer" src={omen} alt="Omen"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Viper'})} className="imageportraitcontainer" src={viper} alt="Viper"></img>
                     </div>
                     <div className='charselectrow'>
-                        <img className="imageportraitcontainer" src={duelist} alt="Duelist"></img>
+                        <img className="roleportraitcontainer" src={duelist} alt="Duelist"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Jett'})} className="imageportraitcontainer" src={jett} alt="Jett"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Phoenix'})} className="imageportraitcontainer" src={phoenix} alt="Phoenix"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Raze'})} className="imageportraitcontainer" src={raze} alt="Raze"></img>
@@ -40,13 +40,13 @@ export default class CharacterSelect extends React.Component{
                         <img onClick={() => this.props.handler({lineupSort: 'Yoru'})} className="imageportraitcontainer" src={yoru} alt="Yoru"></img>
                     </div>
                     <div className='charselectrow'>
-                        <img className="imageportraitcontainer" src={initiator} alt="Initiator"></img>
+                        <img className="roleportraitcontainer" src={initiator} alt="Initiator"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Breach'})} className="imageportraitcontainer" src={breach} alt="Breach"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Skye'})} className="imageportraitcontainer" src={skye} alt="Skye"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Sova'})} className="imageportraitcontainer" src={sova} alt="Sova"></img>
                     </div>
                     <div className='charselectrow'>
-                        <img className="imageportraitcontainer" src={sentinel} alt="Sentinel"></img>
+                        <img className="roleportraitcontainer" src={sentinel} alt="Sentinel"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Cypher'})} className="imageportraitcontainer" src={cypher} alt="Cypher"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Killjoy'})} className="imageportraitcontainer" src={killjoy} alt="Killjoy"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Sage'})} className="imageportraitcontainer" src={sage} alt="Sage"></img>

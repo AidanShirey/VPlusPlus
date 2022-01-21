@@ -14,19 +14,32 @@
   z-index: 3;
 }
 
+.mapnamecontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .mapsitehead {
   color: #fa4454;
+  letter-spacing: 2px;
+  font-size: 100px;
+  text-transform: uppercase;
 }
 
 .mapsitedivider {
+  margin-bottom: 1rem;
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 29px;
   color: #505050;
-  display: flex;
-  margin: 0 1rem;
-  justify-content: center;
-  font-size: 60px;
 }
 
 .mapsitetext {
+  margin-bottom: 1rem;
+  font-size: 30px;
+  letter-spacing: 31px;
+  text-transform: uppercase;
   color: whitesmoke;
 }
 
@@ -82,6 +95,14 @@
     flex-direction: column;
   }
 
+  .mapnamecontainer {
+    align-items: center;
+  }
+
+  .mapsitetext {
+    padding-left: 31px;
+  }
+
   .headercontainer {
     flex-direction: column;
     width: auto;
@@ -95,7 +116,7 @@
   }
 
   .mapsitedivider {
-    display: none;
+    padding-left: 29px;
   }
 }
 

@@ -1,7 +1,6 @@
 .charselect {
   display: flex;
-  margin: 0 auto;
-  padding: 1rem 2rem;
+  width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -14,10 +13,12 @@
 
 .portraitcontainer {
   display: flex;
+  margin-left: auto;
   flex-direction: column;
 }
 
 .portraits {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +33,16 @@
 .imageportraitcontainer {
   width: 3.5rem;
   height: 3.5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+}
+
+.roleportraitcontainer {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-left: 1rem;
   margin-top: 0.5rem;
   border-radius: 50%;
 }
@@ -46,7 +56,25 @@
     width: 3.5rem;
     height: 3.5rem;
     margin-left: 1rem;
-    margin-right: 1rem;
     border-radius: 50%;
+  }
+
+  .roleportraitcontainer {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+  }
+
+  .portraitcontainer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+
+  .charselect {
+    margin-top: 4rem;
   }
 }
