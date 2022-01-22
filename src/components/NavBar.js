@@ -10,7 +10,7 @@ export class NavBar extends Component {
             <Link className="logo" style={{textDecoration: "none"}} to="/">
               <strong>V++</strong>
             </Link>
-            <div className="dividerline"> // </div>
+            <div className="dividerline"> <div className='dividerline1'></div> <div className='dividerline2'></div> </div>
             <div className="desktopnav">
               <Maptab name="Ascent"/>
               <Maptab name="Bind"/>

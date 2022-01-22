@@ -43,6 +43,7 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
+  overflow: hidden;
   height: 10%;
   width: 100%;
   color: #fa4454;
@@ -71,6 +72,23 @@
   font-size: 35px;
   display: flex;
   color: #505050;
+}
+
+.dividerline1 {
+  height: 7rem;
+  width: 1rem;
+  margin-right: 1rem;
+  transform: rotate(15deg);
+  z-index: -1;
+  background-color: #1a1a1a;
+}
+
+.dividerline2 {
+  height: 7rem;
+  width: 1rem;
+  transform: rotate(15deg);
+  z-index: -1;
+  background-color: #1a1a1a;
 }
 
 .topnavtab {

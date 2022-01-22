@@ -8,7 +8,6 @@ export default class SiteSwitcher extends React.Component{
         this.site = this.props.site;
     }
 
-    
     render(){
         return (
             <div className="siteswitcher">
