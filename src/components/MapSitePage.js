@@ -9,13 +9,19 @@ export default class MapSitePage extends React.Component{
         super(props);
         this.name = this.props.name;
         this.side = this.props.side;
-        this.state = {lineupSort: "DefaultSpread"};
+        this.state = {lineupSort: "DefaultSpread",
+        site: "A-Site"};
         this.setState = this.setState.bind(this); 
     }
     
     componentDidUpdate(prevState){
-        if (this.state.lineupSort !== prevState.lineupSort){
-            this.setState({lineupSort: prevState.lineupSort});
+        if (prevState.lineupSort !== undefined){
+            if (this.state.lineupSort !== prevState.lineupSort)
+                this.setState({lineupSort: prevState.lineupSort});
+        }
+        if (prevState.site !== undefined){
+            if (this.state.site !== prevState.site)
+                this.setState({site: prevState.site});
         }
     }
 
@@ -32,12 +38,12 @@ export default class MapSitePage extends React.Component{
                                     <div className="mapsitehead"><strong>{this.name}</strong></div>
                                     <div className="mapsitetext"><strong>{this.side}</strong></div>
                                     <div className='mapsitedivider'>////////////</div>
-                                    <SiteSwitcher/>
+                                    <SiteSwitcher handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
                                 </div>
-                                <CharacterSelect handler={this.setState}/>
+                                <CharacterSelect handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
                             </div>
                         </div>
-                        <MapSitePageRow name={this.name} side={this.side} site="A-Site" sort={this.state.lineupSort}/>
+                        <MapSitePageRow name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>
                     </div>
                 </div>
             )
@@ -57,7 +63,7 @@ export default class MapSitePage extends React.Component{
                         <CharacterSelect handler={this.setState}/>
                         </div>
                     </div>
-                    <MapSitePageRow name={this.name} side={this.side} site="A-Site" sort={this.state.lineupSort}/>
+                    <MapSitePageRow name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>
                 </div>
             </div>
         )

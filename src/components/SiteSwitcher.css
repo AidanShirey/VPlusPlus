@@ -14,15 +14,55 @@
 .a-site-starter {
   width: 40px;
   height: 130%;
-  transform: translate(5px, 0px) rotate(15deg);
+  transform: translate(5px, -4px) rotate(15deg);
   background-color: #b78460;
+}
+
+.a-site-button {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.b-site-button {
+  display: flex;
+  width: 50%;
+  height: 100%;
 }
 
 .a-site-ender {
   width: 40px;
   height: 130%;
-  transform: translate(-5px, 0px) rotate(15deg);
+  transform: translate(-5px, -5px) rotate(15deg);
   background-color: #b78460;
+}
+
+.a-site-button:hover .a-site-starter,
+.a-site-button.hover .a-site-starter {
+  background: #c8a084;
+}
+
+.a-site-button:hover .a-site,
+.a-site-button.hover .a-site {
+  background: #c8a084;
+}
+.a-site-button:hover .a-site-ender,
+.a-site-button.hover .a-site-ender {
+  background: #c8a084;
+}
+
+.b-site-button:hover .b-site-starter,
+.b-site-button.hover .b-site-starter {
+  background: #4f6c96;
+}
+
+.b-site-button:hover .b-site,
+.b-site-button.hover .b-site {
+  background: #4f6c96;
+}
+.b-site-button:hover .b-site-ender,
+.b-site-button.hover .b-site-ender {
+  background: #4f6c96;
 }
 
 .a-site {
@@ -39,14 +79,14 @@
 .b-site-starter {
   width: 40px;
   height: 130%;
-  transform: translate(5px, 0px) rotate(15deg);
+  transform: translate(5px, -4px) rotate(15deg);
   background-color: #364966;
 }
 
 .b-site-ender {
   width: 40px;
   height: 130%;
-  transform: translate(-5px, 0px) rotate(15deg);
+  transform: translate(-5px, -5px) rotate(15deg);
   background-color: #364966;
 }
 

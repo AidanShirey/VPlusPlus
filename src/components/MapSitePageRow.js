@@ -18,7 +18,17 @@ const dbRef = ref(getDatabase());
 
 export default function MapSitePageRow(props){
     const [itemList, setitemList] = useState();
+    const [ lineupSite, setlineupSite] = useState();
+    const [ lineupSort, setlineupSort] = useState();
     useEffect(() => {
+      if(props.site !== lineupSite){
+        setlineupSite(props.site);
+        setlineupSort(props.sort);
+      }
+      if(props.sort !== lineupSort){
+        setlineupSite(props.site);
+        setlineupSort(props.sort);
+      }
       get(child(dbRef, `${props.name}/${props.side}/${props.site}/${props.sort}/`)).then((snapshot) => {
         if (snapshot.exists()) {
             let total = snapshot.size;
@@ -39,7 +49,7 @@ export default function MapSitePageRow(props){
           }).catch((error) => {
             console.error(error);
           }); 
-        }, [props.sort]);
+        }, [props.sort, props.site]);
 
     return (
         <div className='row'>
