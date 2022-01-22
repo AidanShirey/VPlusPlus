@@ -43,7 +43,6 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
-  overflow: hidden;
   height: 10%;
   width: 100%;
   color: #fa4454;
@@ -68,6 +67,8 @@
 
 .dividerline {
   width: 10%;
+  height: 100%;
+  overflow: hidden;
   justify-content: center;
   font-size: 35px;
   display: flex;
@@ -78,7 +79,7 @@
   height: 7rem;
   width: 1rem;
   margin-right: 1rem;
-  transform: rotate(15deg);
+  transform: translate(0px, -10px) rotate(15deg);
   z-index: -1;
   background-color: #1a1a1a;
 }
@@ -86,7 +87,7 @@
 .dividerline2 {
   height: 7rem;
   width: 1rem;
-  transform: rotate(15deg);
+  transform: translate(0px, -10px) rotate(15deg);
   z-index: -1;
   background-color: #1a1a1a;
 }
