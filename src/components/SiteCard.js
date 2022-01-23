@@ -23,17 +23,7 @@ export default function SiteCard(props) {
   const [ lineupVideo, setlineupVideo ] = useState();
   const [ lineupName, setlineupName] = useState();
   const [ lineupDescription, setlineupDescription ] = useState();
-  const [ lineupSite, setlineupSite] = useState();
-  const [ lineupSort, setlineupSort] = useState();
   useEffect(() => {
-    if(props.site !== lineupSite){
-      setlineupSite(props.site);
-      setlineupSort(props.sort);
-    }
-    if(props.sort !== lineupSort){
-      setlineupSite(props.site);
-      setlineupSort(props.sort);
-    }
     get(child(dbRef, `${props.name}/${props.side}/${props.site}/${props.sort}/Lineup${props.count}`)).then((snapshot) => {
       if (snapshot.exists()) {
         setlineupVideo(snapshot.val().LineupVideo);
