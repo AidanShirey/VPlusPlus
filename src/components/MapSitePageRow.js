@@ -18,8 +18,8 @@ const dbRef = ref(getDatabase());
 
 export default function MapSitePageRow(props){
     const [itemList, setitemList] = useState();
-    const [ lineupSite, setlineupSite] = useState();
-    const [ lineupSort, setlineupSort] = useState();
+    const [lineupSite, setlineupSite] = useState();
+    const [lineupSort, setlineupSort] = useState();
     useEffect(() => {
       if(props.site !== lineupSite){
         setlineupSite(props.site);

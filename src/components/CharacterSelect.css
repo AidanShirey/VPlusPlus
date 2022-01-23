@@ -34,8 +34,8 @@
   width: 3.5rem;
   height: 3.5rem;
   margin-left: 1rem;
+  margin-bottom: 0.5rem;
   cursor: pointer;
-  margin-top: 0.5rem;
   border-radius: 50%;
 }
 
@@ -43,7 +43,7 @@
   width: 3.5rem;
   height: 3.5rem;
   margin-left: 1rem;
-  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   border-radius: 50%;
 }
 
@@ -63,7 +63,6 @@
     width: 3.5rem;
     height: 3.5rem;
     margin-left: 1rem;
-    margin-top: 0.5rem;
     border-radius: 50%;
   }
 
@@ -76,5 +75,56 @@
 
   .charselect {
     margin-top: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .portraitcontainer {
+    display: flex;
+    margin-left: 1.5rem;
+    flex-direction: column;
+  }
+  .imageportraitcontainer {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+  }
+
+  .roleportraitcontainer {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 375px) {
+  .portraitcontainer {
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .portraitcontainer {
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .imageportraitcontainer {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+  }
+
+  .roleportraitcontainer {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 1rem;
+    border-radius: 50%;
   }
 }

@@ -14,6 +14,8 @@
 .a-site-starter {
   width: 40px;
   height: 130%;
+  position: relative;
+  z-index: -1;
   transform: translate(5px, -4px) rotate(15deg);
   background-color: #b78460;
 }
@@ -33,6 +35,8 @@
 .a-site-ender {
   width: 40px;
   height: 130%;
+  position: relative;
+  z-index: -1;
   transform: translate(-5px, -5px) rotate(15deg);
   background-color: #b78460;
 }
@@ -79,6 +83,8 @@
 .b-site-starter {
   width: 40px;
   height: 130%;
+  position: relative;
+  z-index: -1;
   transform: translate(5px, -4px) rotate(15deg);
   background-color: #364966;
 }
@@ -86,6 +92,8 @@
 .b-site-ender {
   width: 40px;
   height: 130%;
+  position: relative;
+  z-index: -1;
   transform: translate(-5px, -5px) rotate(15deg);
   background-color: #364966;
 }
@@ -105,4 +113,16 @@
   width: 100%;
   display: flex;
   background-color: #042e27;
+}
+
+@media (max-width: 425px) {
+  .siteswitcher {
+    width: 270px;
+  }
+}
+
+@media (max-width: 320px) {
+  .siteswitcher {
+    width: 270px;
+  }
 }

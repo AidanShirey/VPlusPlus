@@ -76,20 +76,6 @@
   background-color: #1a1a1a;
 }
 
-@media (max-width: 425px) {
-  .mapsitepagecard {
-    margin: 2rem 0;
-  }
-
-  .mapsitepagecardstripe1 {
-    background-color: black;
-  }
-
-  .mapsitepagecardstripe2 {
-    background-color: black;
-  }
-}
-
 @media (max-width: 1024px) {
   .mapsiteheader {
     flex-direction: column;
@@ -101,6 +87,7 @@
 
   .mapsitetext {
     padding-left: 31px;
+    font-size: 30px;
   }
 
   .headercontainer {
@@ -111,52 +98,55 @@
     align-items: center;
   }
 
-  .mapsitetext {
-    font-size: 30px;
-  }
-
   .mapsitedivider {
     padding-left: 29px;
   }
 }
 
-/*CHARACTER SELECT CSS*/
-.charselect {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+@media (max-width: 425px) {
+  .mapsitepagecard {
+    margin: 2rem 0;
+  }
+
+  .mapsitehead {
+    font-size: 15vw;
+  }
+
+  .mapsitetext {
+    font-size: 20px;
+    margin: 0.5rem 0;
+    letter-spacing: 18px;
+    padding-left: 18px;
+  }
+
+  .mapsitedivider {
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 15px;
+    padding-right: 15px;
+  }
+
+  .mapsitepagecardstripe1 {
+    background-color: black;
+  }
+
+  .mapsitepagecardstripe2 {
+    background-color: black;
+  }
 }
 
-.portraits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
+@media (max-width: 320px) {
+  .mapsitetext {
+    font-size: 20px;
+    margin: 0.5rem 0;
+    letter-spacing: 18px;
+    padding-left: 18px;
+  }
 
-.description {
-  font-size: 2em;
-  padding-bottom: 1em;
-}
-
-.imageportraitcontainer {
-  width: 5rem;
-  height: 5rem;
-  margin-left: 2rem;
-  border-radius: 50%;
-}
-
-.imageportraitcontainer:hover {
-  border: 0.5rem solid #fa4454;
-}
-
-@media (max-width: 1024px) {
-  .imageportraitcontainer {
-    width: 4rem;
-    height: 4rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    border-radius: 50%;
+  .mapsitedivider {
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 15px;
+    padding-right: 15px;
   }
 }
