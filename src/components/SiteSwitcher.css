@@ -101,6 +101,34 @@
   background: #4f6c96;
 }
 
+.haven-a-site-button:hover .a-site-starter,
+.haven-a-site-button.hover .a-site-starter {
+  background: #fa4454;
+}
+
+.haven-a-site-button:hover .a-site,
+.haven-a-site-button.hover .a-site {
+  background: #fa4454;
+}
+.haven-a-site-button:hover .a-site-ender,
+.haven-a-site-button.hover .a-site-ender {
+  background: #fa4454;
+}
+
+.haven-b-site-button:hover .b-site-starter,
+.haven-b-site-button.hover .b-site-starter {
+  background: #c8a084;
+}
+
+.haven-b-site-button:hover .b-site,
+.haven-b-site-button.hover .b-site {
+  background: #c8a084;
+}
+.haven-b-site-button:hover .b-site-ender,
+.haven-b-site-button.hover .b-site-ender {
+  background: #c8a084;
+}
+
 .a-site {
   width: 100%;
   height: 100%;
