@@ -10,6 +10,7 @@
 }
 
 .mapsiteheader {
+  width: 100%;
   display: flex;
   z-index: 3;
 }
@@ -47,6 +48,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  align-items: center;
   border-radius: 25px;
   margin: 2rem;
   background-color: black;
@@ -76,9 +78,24 @@
   background-color: #1a1a1a;
 }
 
+.lrow {
+  display: grid;
+  grid-template-columns: 32rem 32rem 32rem;
+}
+
+@media (max-width: 1800px) {
+  .lrow {
+    grid-template-columns: 32rem 32rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .mapsiteheader {
     flex-direction: column;
+  }
+
+  .lrow {
+    grid-template-columns: 29rem 29rem;
   }
 
   .mapnamecontainer {
@@ -100,6 +117,12 @@
 
   .mapsitedivider {
     padding-left: 29px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lrow {
+    grid-template-columns: auto;
   }
 }
 

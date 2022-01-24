@@ -52,7 +52,7 @@ export default function MapSitePageRow(props){
         }, [props.sort, props.site]);
 
     return (
-        <div className='row'>
+        <div className='lrow'>
           {itemList}
         </div>
     )
