@@ -1,11 +1,12 @@
 .row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .item {
-  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
 }
 
 .homepagecard {
@@ -13,6 +14,7 @@
   position: relative;
   flex-direction: column;
   border-radius: 25px;
+  width: calc(100% - 4rem);
   margin: 2rem;
   background-color: black;
   overflow: hidden;
@@ -41,7 +43,35 @@
   background-color: #1a1a1a;
 }
 
+@media (max-width: 1920px) {
+  .row {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 1800px) {
+  .row {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 1440px) {
+  .row {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: auto;
+  }
+}
+
 @media (max-width: 425px) {
+  .homepagecard {
+    width: 100%;
+  }
+
   .homepagecardstripe1 {
     background-color: black;
   }
