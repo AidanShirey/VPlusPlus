@@ -83,6 +83,18 @@
   grid-template-columns: 32rem 32rem 32rem;
 }
 
+@media (min-width: 1920px) {
+  .lrow {
+    grid-template-columns: 32rem 32rem 32rem 32rem;
+  }
+}
+
+@media (max-width: 1920px) {
+  .lrow {
+    grid-template-columns: 32rem 32rem 32rem;
+  }
+}
+
 @media (max-width: 1800px) {
   .lrow {
     grid-template-columns: 32rem 32rem;
