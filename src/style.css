@@ -254,14 +254,6 @@ body {
     height: 0.5rem;
     width: 2.5rem;
   }
-
-  .pluspluscontainer {
-    display: flex;
-    font-size: 40px;
-    line-height: 24px;
-    flex-direction: column;
-    margin-top: 9px;
-  }
 }
 
 @media (max-width: 425px) {
@@ -285,5 +277,13 @@ body {
     display: flex;
     width: 33.3%;
     margin: 0 auto;
+  }
+
+  .pluspluscontainer {
+    display: flex;
+    font-size: 40px;
+    line-height: 24px;
+    flex-direction: column;
+    margin-top: 9px;
   }
 }
