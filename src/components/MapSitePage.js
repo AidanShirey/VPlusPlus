@@ -38,7 +38,7 @@ export default class MapSitePage extends React.Component{
                                     <div className="mapsitehead"><strong>{this.name}</strong></div>
                                     <div className="mapsitetext"><strong>{this.side}</strong></div>
                                     <div className='mapsitedivider'>////////////</div>
-                                    <SiteSwitcher handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
+                                    <SiteSwitcher map={this.name} handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
                                 </div>
                                 <CharacterSelect handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
                             </div>
@@ -51,21 +51,23 @@ export default class MapSitePage extends React.Component{
         // If map name is equal to Haven, then return the proper site page. 
         return (
             <div className="mapsitepage">
-                <div className="mapsitepagecard">
-                    <div className="mapsitepagecardstripe1"></div>
-                    <div className="mapsitepagecardstripe2"></div>
-                    <div id="a-site" className="mapsiteheader">
-                        <div className="headercontainer">
-                        <div className='mapnamecontainer'>
-                            <div className="mapsitehead"><strong>{this.name}</strong></div>
-                            <div className="mapsitetext"><strong>{this.side}</strong></div>
+                    <div className="mapsitepagecard">
+                        <div className="mapsitepagecardstripe1"></div>
+                        <div className="mapsitepagecardstripe2"></div>
+                        <div id="a-site" className="mapsiteheader">
+                            <div className="headercontainer">
+                                <div className='mapnamecontainer'>
+                                    <div className="mapsitehead"><strong>{this.name}</strong></div>
+                                    <div className="mapsitetext"><strong>{this.side}</strong></div>
+                                    <div className='mapsitedivider'>////////////</div>
+                                    <SiteSwitcher map={this.name} handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
+                                </div>
+                                <CharacterSelect handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
+                            </div>
                         </div>
-                        <CharacterSelect handler={this.setState}/>
-                        </div>
+                        <MapSitePageRow name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>
                     </div>
-                    <MapSitePageRow name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>
                 </div>
-            </div>
         )
     }
 }

@@ -43,7 +43,7 @@ export default function SiteCard(props) {
         </video>
         <div className={props.site}>
         <div className="sitecarddesc">
-          <div className="sitecardheader">
+          <div className={`sitecardheader ${props.site}`}>
             <strong>{lineupName}</strong>
           </div>
           <hr/>
