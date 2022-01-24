@@ -49,6 +49,12 @@
   }
 }
 
+@media (max-width: 1920px) {
+  .row {
+    grid-template-columns: auto auto auto;
+  }
+}
+
 @media (max-width: 1800px) {
   .row {
     grid-template-columns: auto auto;
