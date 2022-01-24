@@ -79,7 +79,7 @@
   height: 14rem;
   width: 1rem;
   margin-right: 1rem;
-  transform: translate(0px, -10px) rotate(15deg);
+  transform: translate(0px, -4rem) rotate(15deg);
   z-index: -1;
   background-color: #1a1a1a;
 }
@@ -87,7 +87,7 @@
 .dividerline2 {
   height: 14rem;
   width: 1rem;
-  transform: translate(0px, -10px) rotate(15deg);
+  transform: translate(0px, -4rem) rotate(15deg);
   z-index: -1;
   background-color: #1a1a1a;
 }
