@@ -4,7 +4,13 @@ export default function MobileMaptab() {
     return (
     <div className="topnavtab">
         <div className="dropdown">
-          <button className="dropbtn"><strong>Sites</strong></button>
+          <button className="dropbtn">
+              <div className='hamburgermenucontainer'>
+                <div className='hamburgerlinecontainer'><div className='hamburgerlineender'></div><div className='hamburgerline1'></div></div>
+                <div className='hamburgerlinecontainer'><div className='hamburgerlineender'></div><div className='hamburgerline2'></div></div>
+                <div className='hamburgerlinecontainer'><div className='hamburgerlineender'></div><div className='hamburgerline3'></div></div>
+              </div>
+          </button>
             <div className="dropdown-content">
               <Link to={"defending-Ascent"}><div>Ascent Defending</div></Link>
               <Link to={"attacking-Ascent"}><div>Ascent Attacking</div></Link>

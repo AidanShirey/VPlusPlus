@@ -8,7 +8,11 @@ export class NavBar extends Component {
     return (
         <div className="topnavbar">
             <Link className="logo" style={{textDecoration: "none"}} to="/">
-              <strong>V++</strong>
+              <strong>V</strong>
+              <div className='pluspluscontainer'>
+                <strong>+</strong>
+                <strong>+</strong>
+              </div>
             </Link>
             <div className="dividerline"> <div className='dividerline1'></div> <div className='dividerline2'></div> </div>
             <div className="desktopnav">

@@ -116,6 +116,7 @@ button {
   color: whitesmoke;
   font-size: 28px;
   border: none;
+  display: flex;
   background-color: transparent;
 }
 
@@ -160,6 +161,10 @@ button {
   left: initial;
 }
 
+.hamburgermenucontainer {
+  display: none;
+}
+
 /* General Styling */
 body {
   margin: 0;
@@ -201,6 +206,61 @@ body {
     width: 33%;
     font-size: 35px;
     color: #343434;
+  }
+
+  .hamburgermenucontainer {
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburgerlinecontainer {
+    display: flex;
+    height: 0.5rem;
+    width: 3rem;
+    overflow: hidden;
+  }
+
+  .hamburgerlinecontainer:nth-of-type(2n) {
+    display: flex;
+    height: 0.5rem;
+    width: 3rem;
+    margin: 0.5rem 0;
+    overflow: hidden;
+  }
+
+  .hamburgerline1 {
+    background-color: whitesmoke;
+    height: 0.5rem;
+    width: 1rem;
+  }
+
+  .hamburgerline2 {
+    background-color: whitesmoke;
+    height: 0.5rem;
+    width: 1.75rem;
+  }
+
+  .hamburgerlineender {
+    background-color: whitesmoke;
+    width: 0.5rem;
+    height: 2rem;
+    margin-left: auto;
+    transform: translate(0px, -1px) rotate(15deg);
+  }
+
+  .hamburgerline3 {
+    background-color: whitesmoke;
+    height: 0.5rem;
+    width: 2.5rem;
+  }
+
+  .pluspluscontainer {
+    display: flex;
+    font-size: 40px;
+    line-height: 24px;
+    flex-direction: column;
+    margin-top: 9px;
   }
 }
 
