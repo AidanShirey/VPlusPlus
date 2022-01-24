@@ -76,7 +76,7 @@
 }
 
 .dividerline1 {
-  height: 7rem;
+  height: 14rem;
   width: 1rem;
   margin-right: 1rem;
   transform: translate(0px, -10px) rotate(15deg);
@@ -85,7 +85,7 @@
 }
 
 .dividerline2 {
-  height: 7rem;
+  height: 14rem;
   width: 1rem;
   transform: translate(0px, -10px) rotate(15deg);
   z-index: -1;
