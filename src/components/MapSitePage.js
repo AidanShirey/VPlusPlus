@@ -48,7 +48,7 @@ export default class MapSitePage extends React.Component{
                                 <div className='mapsitecutbody'></div>
                             </div>
                         </div>
-                        <LineupMap name={this.name} side={this.side}/>
+                        <LineupMap name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>
                         <MapSitePageRow name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ export default class MapSitePage extends React.Component{
                                 <div className='mapsitecutbody'></div>
                             </div>
                         </div>
-                        <LineupMap name={this.name} side={this.side}/>
+                        <LineupMap name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>
                         <MapSitePageRow name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>
                     </div>
                 </div>
