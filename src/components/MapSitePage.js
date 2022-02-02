@@ -63,11 +63,15 @@ export default class MapSitePage extends React.Component{
                                 <div className='mapnamecontainer'>
                                     <div className="mapsitehead"><strong>{this.name}</strong></div>
                                     <div className="mapsitetext"><strong>{this.side}</strong></div>
+                                    <div className='mapsitedeskdivider1'></div>
+                                    <div className='mapsitedeskdivider2'></div>
                                     <div className='mapsitedivider'>////////////</div>
                                     <SiteSwitcher map={this.name} handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
+                                    <SideSwitcher/>
                                 </div>
-                                <LineupMap name={this.name} side={this.side}/>
                                 <CharacterSelect handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
+                                <div className='mapsitecut'></div>
+                                <div className='mapsitecutbody'></div>
                             </div>
                         </div>
                         <LineupMap name={this.name} side={this.side}/>
