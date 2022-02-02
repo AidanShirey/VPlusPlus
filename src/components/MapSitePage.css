@@ -53,7 +53,7 @@
   letter-spacing: 2px;
   font-size: 40px;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 2rem;
   margin-top: -1rem;
   text-transform: uppercase;
 }
@@ -74,7 +74,7 @@
   margin-right: 1rem;
   top: 50%;
   left: 50%;
-  transform: translate(50%, -7rem) rotate(15deg);
+  transform: translate(-35%, -7rem) rotate(15deg);
   z-index: -1;
   background-color: black;
 }
@@ -85,7 +85,7 @@
   width: 1rem;
   top: 50%;
   left: 50%;
-  transform: translate(-135%, -7rem) rotate(15deg);
+  transform: translate(-235%, -7rem) rotate(15deg);
   z-index: -1;
   background-color: black;
 }
