@@ -3,7 +3,6 @@
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  justify-content: end;
   margin: 2rem 0;
   z-index: 3;
 }
@@ -11,6 +10,7 @@
 .plotcontainer {
   width: 675px;
   height: 675px;
+  margin: 0 auto;
 }
 
 .plot {
