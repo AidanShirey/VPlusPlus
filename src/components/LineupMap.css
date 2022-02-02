@@ -1,0 +1,91 @@
+.lineupmap {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  z-index: 3;
+}
+
+.plotcontainer {
+  width: 675px;
+  height: 675px;
+}
+
+.plot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.point {
+  position: absolute;
+  background-color: #343434;
+  border: 0.2rem solid #fa4454;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+}
+
+.point:hover {
+  background-color: #fa4454;
+  border: 0.2rem solid #343434;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+}
+
+.Ascentmap {
+  background-image: url("ascentmap.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Bindmap {
+  background-image: url("bindmap.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Breezemap {
+  background-image: url("breezemap.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Fracturemap {
+  background-image: url("fracturemap.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Havenmap {
+  background-image: url("havenmap.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Iceboxmap {
+  background-image: url("iceboxmap.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Splitmap {
+  background-image: url("splitmap.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1024px) {
+  .lineupmap {
+    display: none;
+  }
+}

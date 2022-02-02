@@ -1,8 +1,9 @@
 .headercontainer {
+  position: relative;
   display: flex;
   width: 100%;
   font-size: 60px;
-  margin: 2rem;
+  margin: 1rem 2rem 0 2rem;
 }
 
 .mapsitepage {
@@ -12,34 +13,88 @@
 .mapsiteheader {
   width: 100%;
   display: flex;
+  background-color: #1a1a1a;
   z-index: 3;
 }
 
-.mapnamecontainer {
-  display: flex;
-  flex-direction: column;
+.mapsitecut {
+  position: absolute;
+  width: 8rem;
+  height: 25rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-15%, -50%) rotate(15deg);
+  z-index: 1;
+  background-color: black;
+}
+
+.mapsitecutbody {
+  position: absolute;
+  height: 22rem;
   width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(2%, -50%);
+  z-index: 1;
+  background-color: black;
+}
+
+.mapnamecontainer {
+  width: 50%;
+  display: flex;
+  position: relative;
+  flex-direction: row;
 }
 
 .mapsitehead {
   color: #fa4454;
+  display: flex;
+  align-items: center;
   letter-spacing: 2px;
-  font-size: 100px;
+  font-size: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -1rem;
   text-transform: uppercase;
 }
 
 .mapsitedivider {
   margin-bottom: 1rem;
   font-size: 30px;
+  display: none;
   font-weight: bolder;
   letter-spacing: 29px;
   color: #505050;
 }
 
+.mapsitedeskdivider1 {
+  position: absolute;
+  height: 14rem;
+  width: 1rem;
+  margin-right: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -7rem) rotate(15deg);
+  z-index: -1;
+  background-color: black;
+}
+
+.mapsitedeskdivider2 {
+  position: absolute;
+  height: 14rem;
+  width: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-135%, -7rem) rotate(15deg);
+  z-index: -1;
+  background-color: black;
+}
+
 .mapsitetext {
+  display: none;
   margin-bottom: 1rem;
   font-size: 30px;
-  letter-spacing: 31px;
+  letter-spacing: 5px;
   text-transform: uppercase;
   color: whitesmoke;
 }
@@ -79,7 +134,7 @@
 }
 
 .lrow {
-  display: grid;
+  display: none;
   grid-template-columns: 32rem 32rem 32rem;
 }
 
@@ -107,16 +162,43 @@
   }
 
   .lrow {
+    display: grid;
     grid-template-columns: 29rem 29rem;
   }
 
   .mapnamecontainer {
     align-items: center;
+    flex-direction: column;
   }
 
   .mapsitetext {
+    display: block;
+    margin-bottom: 1rem;
+    letter-spacing: 31px;
     padding-left: 31px;
     font-size: 30px;
+    text-transform: uppercase;
+    color: whitesmoke;
+  }
+
+  .mapsitedivider {
+    display: block;
+  }
+
+  .mapsitehead {
+    color: #fa4454;
+    letter-spacing: 2px;
+    font-size: 100px;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  .mapsitecut {
+    display: none;
+  }
+
+  .mapsitecutbody {
+    display: none;
   }
 
   .headercontainer {
@@ -129,6 +211,19 @@
 
   .mapsitedivider {
     padding-left: 29px;
+  }
+
+  .mapsitedeskdivider1 {
+    display: none;
+  }
+
+  .mapsitedeskdivider2 {
+    display: none;
+  }
+
+  .mapsitehead {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

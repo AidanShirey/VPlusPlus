@@ -1,6 +1,8 @@
 .charselect {
   display: flex;
-  width: 100%;
+  margin-left: auto;
+  width: 50%;
+  z-index: 2;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -13,7 +15,7 @@
 
 .portraitcontainer {
   display: flex;
-  margin-left: auto;
+  width: 100%;
   flex-direction: column;
 }
 
@@ -31,17 +33,37 @@
 }
 
 .imageportraitcontainer {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
   cursor: pointer;
   border-radius: 50%;
 }
 
+.charselectgroup1 {
+  display: flex;
+}
+
+.charselectgroup2 {
+  display: flex;
+}
+
+.charselectrow1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+}
+
+.charselectrow2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
 .roleportraitcontainer {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
   border-radius: 50%;
@@ -53,28 +75,52 @@
 
 @media (max-width: 1024px) {
   .imageportraitcontainer {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     margin-left: 1rem;
     border-radius: 50%;
   }
 
+  .charselectgroup1 {
+    display: flex;
+    margin-right: 0;
+    flex-direction: column;
+  }
+
+  .charselectgroup2 {
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .charselectrow1 {
+    margin-right: 0;
+  }
+
+  .charselectrow2 {
+    margin-left: 0;
+  }
+
   .roleportraitcontainer {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     margin-left: 1rem;
     border-radius: 50%;
   }
 
   .portraitcontainer {
     display: flex;
+    width: initial;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
   }
 
   .charselect {
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    width: 100%;
   }
 }
 
@@ -86,15 +132,15 @@
   }
 
   .imageportraitcontainer {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     margin-left: 1rem;
     border-radius: 50%;
   }
 
   .roleportraitcontainer {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     margin-left: 1rem;
     border-radius: 50%;
   }
@@ -116,15 +162,15 @@
   }
 
   .imageportraitcontainer {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     margin-left: 1rem;
     border-radius: 50%;
   }
 
   .roleportraitcontainer {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     margin-left: 1rem;
     border-radius: 50%;
   }
