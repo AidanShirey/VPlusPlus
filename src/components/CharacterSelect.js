@@ -24,8 +24,6 @@ export default class CharacterSelect extends React.Component{
         super(props);
     }
     
-    
-    
     render (){
         return(
             <div className="charselect">
@@ -48,13 +46,13 @@ export default class CharacterSelect extends React.Component{
                     </div>
                     </div>
                     <div className='charselectgroup2'>
-                    <div className='charselectrow1'>
+                    <div className='charselectrow3'>
                         <img className="roleportraitcontainer" src={initiator} alt="Initiator"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Breach', site: this.props.site})} className="imageportraitcontainer" src={breach} alt="Breach"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Skye', site: this.props.site})} className="imageportraitcontainer" src={skye} alt="Skye"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Sova', site: this.props.site})} className="imageportraitcontainer" src={sova} alt="Sova"></img>
                     </div>
-                    <div className='charselectrow2'>
+                    <div className='charselectrow4'>
                         <img className="roleportraitcontainer" src={sentinel} alt="Sentinel"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Cypher', site: this.props.site})} className="imageportraitcontainer" src={cypher} alt="Cypher"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Killjoy', site: this.props.site})} className="imageportraitcontainer" src={killjoy} alt="Killjoy"></img>

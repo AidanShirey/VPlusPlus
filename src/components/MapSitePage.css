@@ -52,7 +52,7 @@
   align-items: center;
   letter-spacing: 2px;
   font-size: 3vw;
-  margin-right: auto;
+  margin-right: 1rem;
   margin-left: 0;
   margin-top: -1rem;
   text-transform: uppercase;
@@ -71,21 +71,24 @@
   position: absolute;
   height: 14rem;
   width: 1rem;
-  margin-right: 1rem;
-  top: 50%;
   left: 50%;
-  transform: translate(-35%, -7rem) rotate(15deg);
+  transform: translate(-0.95rem, -7rem) rotate(15deg);
   z-index: -1;
   background-color: black;
+}
+
+.mapsitedeskdividercontainer {
+  position: relative;
+  display: flex;
+  width: 10%;
 }
 
 .mapsitedeskdivider2 {
   position: absolute;
   height: 14rem;
   width: 1rem;
-  top: 50%;
   left: 50%;
-  transform: translate(-235%, -7rem) rotate(15deg);
+  transform: translate(0.95rem, -7rem) rotate(15deg);
   z-index: -1;
   background-color: black;
 }
@@ -153,6 +156,12 @@
 @media (max-width: 1800px) {
   .lrow {
     grid-template-columns: 32rem 32rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .mapsitehead {
+    margin-right: 4rem;
   }
 }
 

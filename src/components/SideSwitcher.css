@@ -1,22 +1,39 @@
 .sideswitcher {
   display: flex;
+  width: 50%;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin-top: -1rem;
 }
 
 .sidebutton1 {
+  width: 50%;
   font-size: 24px;
   margin: auto 0;
   text-transform: uppercase;
 }
 
 .sidebutton2 {
+  width: 50%;
   font-size: 24px;
   margin: auto 0;
   text-transform: uppercase;
+}
+
+@media (max-width: 1440px) {
+  .sidebutton1 {
+    font-size: 24px;
+    margin: auto 2rem auto 0;
+    text-transform: uppercase;
+  }
+
+  .sidebutton2 {
+    font-size: 24px;
+    margin: auto 2rem auto 0;
+    text-transform: uppercase;
+  }
 }
 
 @media (max-width: 1024px) {

@@ -53,11 +53,27 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .charselectrow2 {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.charselectrow3 {
+  display: none;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.charselectrow4 {
+  display: none;
+  flex-wrap: wrap;
+  margin-right: auto;
   margin-left: auto;
 }
 
@@ -93,11 +109,27 @@
     flex-direction: column;
   }
 
-  .charselectrow1 {
+  .charselectrow3 {
+    display: flex;
     margin-right: 0;
+    margin-left: 0;
+  }
+
+  .charselectrow4 {
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .charselectrow1 {
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .charselectrow2 {
+    display: flex;
+    margin-right: 0;
     margin-left: 0;
   }
 
