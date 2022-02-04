@@ -74,7 +74,7 @@
   width: 15rem;
   font-size: 2rem;
   z-index: 2;
-  background-color: #343434;
+  background-color: #1a1a1a;
   text-transform: uppercase;
   border: none;
   color: #fa4454;
@@ -85,7 +85,7 @@
   height: 7rem;
   z-index: 1;
   transform: translate(-1rem, -3.2rem) rotate(15deg);
-  background-color: #343434;
+  background-color: #1a1a1a;
 }
 
 .mapdivider {
