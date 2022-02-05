@@ -19,6 +19,14 @@
   z-index: 3;
 }
 
+.mapsitecutandbody {
+  position: absolute;
+  width: 100vw;
+  margin-top: -2rem;
+  height: 5.5rem;
+  overflow: hidden;
+}
+
 .mapsitecut {
   position: absolute;
   width: 8rem;
@@ -43,9 +51,12 @@
 
 .mapnamecontainer {
   width: 50%;
+  height: 5.5rem;
+  margin-top: -2rem;
   display: flex;
   position: relative;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .mapsitehead {
@@ -56,7 +67,7 @@
   font-size: 2.5rem;
   margin-right: 1rem;
   margin-left: 0;
-  margin-top: -1rem;
+  margin-top: 1rem;
   text-transform: uppercase;
 }
 
@@ -82,7 +93,7 @@
 .mapsitedeskdividercontainer {
   position: relative;
   display: flex;
-  width: 10%;
+  width: 15%;
 }
 
 .mapsitedeskdivider2 {
@@ -168,6 +179,11 @@
 @media (max-width: 1024px) {
   .mapsiteheader {
     flex-direction: column;
+    padding-top: 0rem;
+  }
+
+  .mapsitedeskdividercontainer {
+    display: none;
   }
 
   .lrow {
@@ -178,6 +194,9 @@
   .mapnamecontainer {
     align-items: center;
     flex-direction: column;
+    height: auto;
+    margin-top: 0;
+    overflow: initial;
   }
 
   .mapsitetext {

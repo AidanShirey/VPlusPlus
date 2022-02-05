@@ -23,7 +23,7 @@ export default class CharacterSelect extends React.Component{
     constructor(props){
         super(props);
     }
-    
+
     render (){
         return(
             <div className="charselect">
@@ -31,13 +31,28 @@ export default class CharacterSelect extends React.Component{
                     <div className='portraitcontainer'>
                     <div className='charselectgroup1'>
                     <div className='charselectrow1'>
-                        <img className="roleportraitcontainer" src={controller} alt="Controller"></img>
+                        <div className="dropdown">
+                            <button className="dropbtn"><img className="roleportraitcontainer" src={controller} alt="Controller"></img></button>
+                            <div className="role-dropdown-content">
+                                <img className="roleportraitcontainer" src={duelist} alt="Duelist"></img>
+                                <img className="roleportraitcontainer" src={initiator} alt="Initiator"></img>
+                                <img className="roleportraitcontainer" src={sentinel} alt="Sentinel"></img>
+                            </div>
+                        </div>
                         <img onClick={() => this.props.handler({lineupSort: 'Brimstone', site: this.props.site})} className="imageportraitcontainer" src={brimstone} alt="Brimstone"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Omen', site: this.props.site})} className="imageportraitcontainer" src={omen} alt="Omen"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Viper', site: this.props.site})} className="imageportraitcontainer" src={viper} alt="Viper"></img>
                     </div>
                     <div className='charselectrow2'>
-                        <img className="roleportraitcontainer" src={duelist} alt="Duelist"></img>
+                        <div className="dropdown">
+                            <button className="dropbtn"><img className="roleportraitcontainer" src={duelist} alt="Duelist"></img></button>
+                            <div className="role-dropdown-content">
+                                <img className="roleportraitcontainer" src={duelist} alt="Duelist"></img>
+                                <img className="roleportraitcontainer" src={initiator} alt="Initiator"></img>
+                                <img className="roleportraitcontainer" src={sentinel} alt="Sentinel"></img>
+                            </div>
+                        </div>
+                        
                         <img onClick={() => this.props.handler({lineupSort: 'Jett', site: this.props.site})} className="imageportraitcontainer" src={jett} alt="Jett"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Phoenix', site: this.props.site})} className="imageportraitcontainer" src={phoenix} alt="Phoenix"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Raze', site: this.props.site})} className="imageportraitcontainer" src={raze} alt="Raze"></img>
@@ -47,13 +62,29 @@ export default class CharacterSelect extends React.Component{
                     </div>
                     <div className='charselectgroup2'>
                     <div className='charselectrow3'>
-                        <img className="roleportraitcontainer" src={initiator} alt="Initiator"></img>
+                        <div className="dropdown">
+                            <button className="dropbtn"><img className="roleportraitcontainer" src={initiator} alt="Initiator"></img></button>
+                            <div className="role-dropdown-content">
+                                <img className="roleportraitcontainer" src={duelist} alt="Duelist"></img>
+                                <img className="roleportraitcontainer" src={initiator} alt="Initiator"></img>
+                                <img className="roleportraitcontainer" src={sentinel} alt="Sentinel"></img>
+                            </div>
+                        </div>
+                        
                         <img onClick={() => this.props.handler({lineupSort: 'Breach', site: this.props.site})} className="imageportraitcontainer" src={breach} alt="Breach"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Skye', site: this.props.site})} className="imageportraitcontainer" src={skye} alt="Skye"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Sova', site: this.props.site})} className="imageportraitcontainer" src={sova} alt="Sova"></img>
                     </div>
                     <div className='charselectrow4'>
-                        <img className="roleportraitcontainer" src={sentinel} alt="Sentinel"></img>
+                        <div className="dropdown">
+                            <button className="dropbtn"><img className="roleportraitcontainer" src={sentinel} alt="Sentinel"></img></button>
+                            <div className="role-dropdown-content">
+                                <img className="roleportraitcontainer" src={duelist} alt="Duelist"></img>
+                                <img className="roleportraitcontainer" src={initiator} alt="Initiator"></img>
+                                <img className="roleportraitcontainer" src={sentinel} alt="Sentinel"></img>
+                            </div>
+                        </div>
+                        
                         <img onClick={() => this.props.handler({lineupSort: 'Cypher', site: this.props.site})} className="imageportraitcontainer" src={cypher} alt="Cypher"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Killjoy', site: this.props.site})} className="imageportraitcontainer" src={killjoy} alt="Killjoy"></img>
                         <img onClick={() => this.props.handler({lineupSort: 'Sage', site: this.props.site})} className="imageportraitcontainer" src={sage} alt="Sage"></img>

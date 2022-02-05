@@ -46,8 +46,11 @@ export default class MapSitePage extends React.Component{
                                     <SideSwitcher/>
                                 </div>
                                 <CharacterSelect handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
-                                <div className='mapsitecut'></div>
-                                <div className='mapsitecutbody'></div>
+                                <div className='mapsitecutandbody'>
+                                    <div className='mapsitecut'></div>
+                                    <div className='mapsitecutbody'></div>
+                                </div>
+                                
                             </div>
                         </div>
                         <LineupMap name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>

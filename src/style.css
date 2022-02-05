@@ -141,6 +141,15 @@ button {
   z-index: 1;
 }
 
+.role-dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 4rem;
+  background-color: black;
+  right: 0;
+  z-index: 1;
+}
+
 /* Links inside the dropdown */
 .dropdown-content a {
   color: #fa4454;
@@ -150,6 +159,11 @@ button {
   display: block;
 }
 
+.role-dropdown-content img {
+  display: block;
+  margin-top: 0.5rem;
+}
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #343434;
@@ -157,6 +171,11 @@ button {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
+  display: block;
+  left: initial;
+}
+
+.dropdown:hover .role-dropdown-content {
   display: block;
   left: initial;
 }

@@ -3,7 +3,7 @@
   padding: 0 2rem 0 0;
   display: flex;
   align-items: center;
-  z-index: 3;
+  z-index: 2;
 }
 
 .plotcontainer {

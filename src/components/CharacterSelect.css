@@ -33,10 +33,9 @@
 }
 
 .imageportraitcontainer {
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   margin-left: 1rem;
-  margin-bottom: 0.5rem;
   cursor: pointer;
   border-radius: 50%;
 }
@@ -52,36 +51,35 @@
 .charselectrow1 {
   display: flex;
   flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 2rem;
+  margin-top: -1rem;
 }
 
 .charselectrow2 {
   display: none;
   flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 2rem;
+  margin-top: -1rem;
 }
 
 .charselectrow3 {
   display: none;
   flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 2rem;
+  margin-top: -1rem;
 }
 
 .charselectrow4 {
   display: none;
   flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 2rem;
+  margin-top: -1rem;
 }
 
 .roleportraitcontainer {
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   margin-left: 1rem;
-  margin-bottom: 0.5rem;
   border-radius: 50%;
 }
 
@@ -94,6 +92,7 @@
     width: 3rem;
     height: 3rem;
     margin-left: 1rem;
+    margin-bottom: 0.5rem;
     border-radius: 50%;
   }
 
@@ -113,23 +112,27 @@
     display: flex;
     margin-right: 0;
     margin-left: 0;
+    margin-top: 0;
   }
 
   .charselectrow4 {
     display: flex;
     margin-right: 0;
     margin-left: 0;
+    margin-top: 0;
   }
 
   .charselectrow1 {
     display: flex;
     margin-right: 0;
     margin-left: 0;
+    margin-top: 0;
   }
 
   .charselectrow2 {
     display: flex;
     margin-right: 0;
+    margin-top: 0;
     margin-left: 0;
   }
 
@@ -137,6 +140,7 @@
     width: 3rem;
     height: 3rem;
     margin-left: 1rem;
+    margin-bottom: 0.5rem;
     border-radius: 50%;
   }
 
