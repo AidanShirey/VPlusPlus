@@ -243,10 +243,6 @@
 }
 
 @media (max-width: 425px) {
-  .mapsitepagecard {
-    margin: 2rem 0;
-  }
-
   .mapsitehead {
     font-size: 15vw;
   }

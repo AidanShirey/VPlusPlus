@@ -1,16 +1,15 @@
 .lineupmap {
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 2rem 0 0;
   display: flex;
   align-items: center;
-  margin: 2rem 0;
   z-index: 3;
 }
 
 .plotcontainer {
   width: 40vw;
   height: 40vw;
-  margin: 0 auto;
+  margin: 2rem auto;
   outline: 2px solid #f5f5f5;
   border-radius: 50%;
 }
