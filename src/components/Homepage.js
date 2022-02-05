@@ -4,7 +4,14 @@ import MapCard from './MapCard'
 
 export default function Homepage() {
     return (
-        <div className="homepagecard">      
+        <div className="homepagecard">    
+          <div className='homepageheader'>
+            <div className='homepageheadercontainer'>
+              <div className='homepageheadercontainertext'><em>Select Map</em></div>              
+            </div>
+            <div className='homepagecut'></div>
+            <div className='homepagecutbody'></div>  
+          </div>  
           <div className="row">
             <div className="item"><MapCard name="Ascent"/></div>
             <div className="item"><MapCard name="Bind"/></div>

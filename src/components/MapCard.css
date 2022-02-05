@@ -74,7 +74,7 @@
   width: 15rem;
   font-size: 2rem;
   z-index: 2;
-  background-color: #1a1a1a;
+  background-color: black;
   text-transform: uppercase;
   border: none;
   color: #fa4454;
@@ -85,7 +85,7 @@
   height: 7rem;
   z-index: 1;
   transform: translate(-1rem, -3.2rem) rotate(15deg);
-  background-color: #1a1a1a;
+  background-color: black;
 }
 
 .mapdivider {
@@ -101,7 +101,7 @@
 
 .mapcard {
   display: flex;
-  border-radius: 25px;
+  position: relative;
   width: 30rem;
   margin-right: 1rem;
   margin-left: 1rem;
@@ -110,6 +110,26 @@
   background-color: black;
   background-size: cover;
   z-index: 3;
+}
+
+.mapcard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 4rem black solid;
+  border-left: 4rem transparent solid;
+  width: 0;
+}
+
+.mapcard::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2rem black solid;
+  border-right: 2rem transparent solid;
+  width: 0;
 }
 
 @media (max-width: 1024px) {
