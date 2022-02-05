@@ -48,8 +48,12 @@
   display: flex;
 }
 
+.displayrow {
+  display: flex !important;
+}
+
 .charselectrow1 {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   margin-left: 2rem;
   margin-top: -1rem;
