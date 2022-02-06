@@ -16,6 +16,7 @@
   width: 100%;
   background-color: black;
   overflow: hidden;
+  border-bottom: 1rem #fa4454 solid;
   z-index: 1;
 }
 
