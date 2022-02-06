@@ -122,6 +122,22 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .homepageheadercontainer {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+
+  .homepageheadercontainertext {
+    width: 100%;
+  }
+
+  .homepagecutandbody {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .row {
     grid-template-columns: auto;
@@ -129,10 +145,6 @@
 
   .homepageheader {
     background-color: #1a1a1a;
-  }
-
-  .homepageheadercontainer {
-    width: 100%;
   }
 
   .homepageheadercontainertext {

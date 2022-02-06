@@ -184,6 +184,10 @@
     padding-top: 0rem;
   }
 
+  .mapsitecutandbody {
+    display: none;
+  }
+
   .mapsitedeskdividercontainer {
     display: none;
   }
