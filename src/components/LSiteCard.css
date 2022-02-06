@@ -1,0 +1,128 @@
+.lsitecard {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: calc(40vw + 4rem);
+  margin: 0 2rem 0 0;
+  z-index: 3;
+  overflow: hidden !important;
+}
+
+.lsitecardheader {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 100% !important;
+  height: 5.5rem !important;
+  padding: 0 !important;
+  margin: 0 0 1rem 0;
+  color: #dc3d4b;
+  background-color: #1a1a1a !important;
+  z-index: 3;
+}
+
+.lsitecardlineupname {
+  display: flex;
+  width: 33%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.lsitecarddividercontainer {
+  display: flex;
+  width: 33%;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.lsitecarddivider1 {
+  height: 14rem;
+  width: 1rem;
+  margin-right: 1rem;
+  transform: translate(0px, -4rem) rotate(15deg);
+  z-index: -1;
+  background-color: black;
+}
+
+.lsitecarddivider2 {
+  height: 14rem;
+  width: 1rem;
+  transform: translate(0px, -4rem) rotate(15deg);
+  z-index: -1;
+  background-color: black;
+}
+
+.lsitecardside {
+  display: flex;
+  justify-content: end;
+  font-weight: bold;
+  width: 33%;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  color: whitesmoke;
+}
+
+.sitecardlineupcontainer {
+  width: 50vw;
+  height: 100%;
+}
+
+.sitecardlineup {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.lsitecarddesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.lsitecarddesc p {
+  width: 100%;
+  padding: 0 2rem;
+  z-index: 3;
+  color: whitesmoke;
+  line-height: 1.5rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+hr {
+  width: calc(100% - 4rem);
+  border: 1px solid #343434;
+}
+
+.A-Site {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  padding: 0 0 1rem 0;
+  background-color: #fa4454;
+  color: #fa4454;
+}
+
+.B-Site {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  padding: 0 0 1rem 0;
+  background-color: #b78460;
+  color: #b78460;
+}
+
+.C-Site {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  padding: 0 0 1rem 0;
+  background-color: #364966;
+  color: #364966;
+}

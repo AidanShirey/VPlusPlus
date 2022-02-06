@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import './SiteCard.css'
+import './LSiteCard.css'
 import { initializeApp } from "firebase/app"
 import { getDatabase, ref, child, get } from "firebase/database"
 
@@ -39,15 +39,20 @@ export default function LSiteCard(props) {
 
     return (
       <div className="lsitecard">
-        <video className="sitecardlineup" src={lineupVideo} controls>
-        </video>
+        <div className="sitecardlineupcontainer">
+          <video className="sitecardlineup" src={lineupVideo} controls>
+          </video>
+        </div>
         <div className={props.site}>
-        <div className="sitecarddesc">
-          <div className={`sitecardheader ${props.site}`}>
-            <strong>{lineupName}</strong>
+        <div className="lsitecarddesc">
+          <div className={`lsitecardheader ${props.site}`}>
+            <strong className="lsitecardlineupname">{lineupName}</strong>
+            <div className="lsitecarddividercontainer">
+              <div className="lsitecarddivider1"></div>
+              <div className="lsitecarddivider2"></div>
+            </div>
+            <div className="lsitecardside">{props.side}</div>
           </div>
-          <hr/>
-          <hr/>
           <p>
             <strong>{lineupDescription}</strong>
           </p>
