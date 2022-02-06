@@ -8,9 +8,11 @@ export default function Homepage() {
           <div className='homepageheader'>
             <div className='homepageheadercontainer'>
               <div className='homepageheadercontainertext'><em>Select Map</em></div>              
+              <div className='homepagecutandbody'>
+              <div className='homepagecut'></div>
+              <div className='homepagecutbody'></div> 
             </div>
-            <div className='homepagecut'></div>
-            <div className='homepagecutbody'></div>  
+            </div>
           </div>  
           <div className="row">
             <div className="item"><MapCard name="Ascent"/></div>

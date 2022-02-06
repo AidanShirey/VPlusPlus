@@ -30,16 +30,28 @@
 
 .homepageheadercontainer {
   display: flex;
-  justify-content: center;
-  width: 50%;
+  width: 100%;
+  margin: 0 2rem;
 }
 
 .homepageheadercontainertext {
+  display: flex;
+  justify-content: center;
+  width: 50%;
   font-weight: bold;
   color: #fa4454;
   letter-spacing: 0.5rem;
   font-size: 2.5rem;
   text-transform: uppercase;
+}
+
+.homepagecutandbody {
+  position: absolute;
+  width: 100vw;
+  margin-top: -2rem;
+  height: 5.5rem;
+  overflow: hidden;
+  border-top: 1rem #fa4454 solid;
 }
 
 .homepagecut {
@@ -48,7 +60,7 @@
   height: 25rem;
   top: 50%;
   left: 50%;
-  transform: translate(-15%, -50%) rotate(15deg);
+  transform: translate(-16%, -50%) rotate(15deg);
   z-index: 1;
   background-color: black;
 }
