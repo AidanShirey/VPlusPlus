@@ -13,7 +13,7 @@
   align-items: center;
   font-size: 1.5rem;
   width: 100% !important;
-  height: 5.5rem !important;
+  height: 4.5rem !important;
   padding: 0 !important;
   margin: 0 0 1rem 0;
   color: #dc3d4b;
@@ -32,7 +32,7 @@
   display: flex;
   width: 33%;
   justify-content: center;
-  height: 100%;
+  height: calc(100% + 2rem);
   overflow: hidden;
   margin: 0 auto;
 }
@@ -82,7 +82,8 @@
   z-index: 3;
   background-color: black;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 1rem);
+  margin-top: 1rem;
 }
 
 .lsitecarddesc p {
