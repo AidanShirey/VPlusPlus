@@ -101,29 +101,29 @@ hr {
   border: 1px solid #343434;
 }
 
-.A-Site {
+.lsitecard .A-Site {
   width: 100%;
   height: 100%;
   z-index: 3;
-  padding: 0 0 1rem 0;
+  padding: 0;
   background-color: #fa4454;
   color: #fa4454;
 }
 
-.B-Site {
+.lsitecard .B-Site {
   width: 100%;
   height: 100%;
   z-index: 3;
-  padding: 0 0 1rem 0;
+  padding: 0;
   background-color: #b78460;
   color: #b78460;
 }
 
-.C-Site {
+.lsitecard .C-Site {
   width: 100%;
   height: 100%;
   z-index: 3;
-  padding: 0 0 1rem 0;
+  padding: 0;
   background-color: #364966;
   color: #364966;
 }
