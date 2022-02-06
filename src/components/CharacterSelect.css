@@ -1,7 +1,9 @@
 .charselect {
   display: flex;
   margin-left: auto;
-  width: 50%;
+  width: calc(50% + 2rem);
+  margin-right: -2rem;
+  border-bottom: 1px #1a1a1a solid;
   z-index: 2;
   justify-content: center;
   align-items: center;
@@ -158,8 +160,10 @@
 
   .charselect {
     margin-top: 3rem;
+    margin-right: 0;
     margin-left: 0;
     margin-bottom: 1rem;
+    border-bottom: none;
     width: 100%;
   }
 }
