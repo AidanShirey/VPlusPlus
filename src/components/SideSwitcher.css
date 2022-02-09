@@ -12,14 +12,23 @@
   width: 50%;
   font-size: 24px;
   margin: auto 0;
+  color: whitesmoke;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .sidebutton2 {
   width: 50%;
   font-size: 24px;
   margin: auto 0;
+  color: whitesmoke;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sidebutton1:hover,
+.sidebutton2:hover {
+  color: #fa4454;
 }
 
 @media (max-width: 1440px) {

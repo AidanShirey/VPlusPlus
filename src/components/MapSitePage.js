@@ -11,8 +11,10 @@ export default class MapSitePage extends React.Component{
         super(props);
         this.name = this.props.name;
         this.side = this.props.side;
-        this.state = {lineupSort: "DefaultSpread",
-        site: "A-Site"};
+        this.sort = this.props.sort;
+        this.site = this.props.site;
+        this.state = {lineupSort: this.sort,
+        site: this.site};
         this.setState = this.setState.bind(this); 
     }
     
@@ -21,10 +23,10 @@ export default class MapSitePage extends React.Component{
             if (this.state.lineupSort !== prevState.lineupSort)
                 this.setState({lineupSort: prevState.lineupSort});
         }
-        if (prevState.site !== undefined){
+        /*if (prevState.site !== undefined){
             if (this.state.site !== prevState.site)
                 this.setState({site: prevState.site});
-        }
+        }*/
     }
 
     render(){
@@ -43,7 +45,7 @@ export default class MapSitePage extends React.Component{
                                     <div className="mapsitetext"><strong>{this.side}</strong></div>
                                     <div className='mapsitedivider'>////////////</div>
                                     <SiteSwitcher map={this.name} handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
-                                    <SideSwitcher/>
+                                    <SideSwitcher name={this.name} sort={this.state.lineupSort} site={this.state.site}/>
                                 </div>
                                 <CharacterSelect handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
                                 <div className='mapsitecutandbody'>
@@ -74,7 +76,7 @@ export default class MapSitePage extends React.Component{
                                     <div className="mapsitetext"><strong>{this.side}</strong></div>
                                     <div className='mapsitedivider'>////////////</div>
                                     <SiteSwitcher map={this.name} handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
-                                    <SideSwitcher/>
+                                    <SideSwitcher name={this.name} sort={this.state.lineupSort} site={this.state.site}/>
                                 </div>
                                 <CharacterSelect handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
                                 <div className='mapsitecutandbody'>
@@ -89,4 +91,6 @@ export default class MapSitePage extends React.Component{
                 </div>
         )
     }
+
+    
 }

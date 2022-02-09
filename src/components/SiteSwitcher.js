@@ -13,8 +13,7 @@ export default class SiteSwitcher extends React.Component{
         if (this.name !== "Haven"){
             return (
             <div className="siteswitcher">
-            <div className='a-site-button' onClick={() => this.props.handler({lineupSort:  this.props.sort,
-            site: 'A-Site'})}>
+            <div className='a-site-button' onClick={() => this.props.handler({lineupSort: this.props.sort, site: 'A-Site'})}>
                 <div className='a-site-starter'></div>
                 <div className='a-site'>
                     <div>
@@ -24,8 +23,7 @@ export default class SiteSwitcher extends React.Component{
                 <div className='a-site-ender'></div>
             </div>
             
-            <div className='b-site-button' onClick={() => this.props.handler({lineupSort:  this.props.sort, 
-                site: 'B-Site'})}>
+            <div className='b-site-button' onClick={() => this.props.handler({lineupSort: this.props.sort, site: 'B-Site'})}>
                 <div className='b-site-starter'></div>
                 <div className='b-site'>
                     <div>
@@ -40,8 +38,7 @@ export default class SiteSwitcher extends React.Component{
         }
         return (
             <div className="siteswitcher">
-                <div className='haven-a-site-button' onClick={() => this.props.handler({lineupSort:  this.props.sort,
-                site: 'A-Site'})}>
+                <div className='haven-a-site-button' onClick={() => this.props.handler({lineupSort:  this.sort, site: 'A-Site'})}>
                     <div className='a-site-starter'></div>
                     <div className='a-site'>
                         <div>
@@ -52,8 +49,7 @@ export default class SiteSwitcher extends React.Component{
                     <div className='a-site-ender'></div>
                 </div>
                 
-                <div className='haven-b-site-button' onClick={() => this.props.handler({lineupSort:  this.props.sort, 
-                    site: 'B-Site'})}>
+                <div className='haven-b-site-button' onClick={() => this.props.handler({lineupSort:  this.sort, site: 'B-Site'})}>
                     <div className='b-site-starter'></div>
                     <div className='b-site'>
                         <div>
@@ -64,8 +60,7 @@ export default class SiteSwitcher extends React.Component{
                     <div className='b-site-ender'></div>
                 </div>
 
-                <div className='c-site-button' onClick={() => this.props.handler({lineupSort:  this.props.sort, 
-                    site: 'C-Site'})}>
+                <div className='c-site-button' onClick={() => this.props.handler({lineupSort:  this.sort, site: 'C-Site'})}>
                     <div className='c-site-starter'></div>
                     <div className='c-site'>
                         <div>
