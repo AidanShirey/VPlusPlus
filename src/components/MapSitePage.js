@@ -13,20 +13,6 @@ export default class MapSitePage extends React.Component{
         this.side = this.props.side;
         this.sort = this.props.sort;
         this.site = this.props.site;
-        this.state = {lineupSort: this.sort,
-        site: this.site};
-        this.setState = this.setState.bind(this); 
-    }
-    
-    componentDidUpdate(prevState){
-        if (prevState.lineupSort !== undefined){
-            if (this.state.lineupSort !== prevState.lineupSort)
-                this.setState({lineupSort: prevState.lineupSort});
-        }
-        /*if (prevState.site !== undefined){
-            if (this.state.site !== prevState.site)
-                this.setState({site: prevState.site});
-        }*/
     }
 
     render(){
@@ -44,10 +30,10 @@ export default class MapSitePage extends React.Component{
                                     </div>
                                     <div className="mapsitetext"><strong>{this.side}</strong></div>
                                     <div className='mapsitedivider'>////////////</div>
-                                    <SiteSwitcher map={this.name} handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
-                                    <SideSwitcher name={this.name} sort={this.state.lineupSort} site={this.state.site}/>
+                                    <SiteSwitcher map={this.name} handler={this.props.handler} site={this.site} sort={this.sort}/>
+                                    <SideSwitcher name={this.name} sort={this.sort} site={this.site}/>
                                 </div>
-                                <CharacterSelect handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
+                                <CharacterSelect handler={this.props.handler} site={this.site} sort={this.sort}/>
                                 <div className='mapsitecutandbody'>
                                     <div className='mapsitecut'></div>
                                     <div className='mapsitecutbody'></div>
@@ -55,8 +41,8 @@ export default class MapSitePage extends React.Component{
                                 
                             </div>
                         </div>
-                        <LineupMap name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>
-                        <MapSitePageRow name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>
+                        <LineupMap name={this.name} side={this.side} site={this.site} sort={this.sort}/>
+                        <MapSitePageRow name={this.name} side={this.side} site={this.site} sort={this.sort}/>
                     </div>
                 </div>
             )
@@ -75,18 +61,18 @@ export default class MapSitePage extends React.Component{
                                     </div>
                                     <div className="mapsitetext"><strong>{this.side}</strong></div>
                                     <div className='mapsitedivider'>////////////</div>
-                                    <SiteSwitcher map={this.name} handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
-                                    <SideSwitcher name={this.name} sort={this.state.lineupSort} site={this.state.site}/>
+                                    <SiteSwitcher map={this.name} handler={this.props.handler} site={this.site} sort={this.sort}/>
+                                    <SideSwitcher name={this.name} sort={this.sort} site={this.site}/>
                                 </div>
-                                <CharacterSelect handler={this.setState} site={this.state.site} sort={this.state.lineupSort}/>
+                                <CharacterSelect handler={this.props.handler} site={this.site} sort={this.sort}/>
                                 <div className='mapsitecutandbody'>
                                     <div className='mapsitecut'></div>
                                     <div className='mapsitecutbody'></div>
                                 </div>
                             </div>
                         </div>
-                        <LineupMap name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>
-                        <MapSitePageRow name={this.name} side={this.side} site={this.state.site} sort={this.state.lineupSort}/>
+                        <LineupMap name={this.name} side={this.side} site={this.site} sort={this.sort}/>
+                        <MapSitePageRow name={this.name} side={this.side} site={this.site} sort={this.sort}/>
                     </div>
                 </div>
         )
