@@ -20,7 +20,7 @@
   height: 100%;
 }
 
-.point {
+.pointa {
   position: absolute;
   background-color: #343434;
   border: 0.2rem solid #fa4454;
@@ -29,8 +29,42 @@
   border-radius: 50%;
 }
 
-.point:hover {
+.pointb {
+  position: absolute;
+  background-color: #343434;
+  border: 0.2rem solid #b78460;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+}
+
+.pointc {
+  position: absolute;
+  background-color: #343434;
+  border: 0.2rem solid #364966;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+}
+
+.pointa:hover {
   background-color: #fa4454;
+  border: 0.2rem solid #343434;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+}
+
+.pointb:hover {
+  background-color: #b78460;
+  border: 0.2rem solid #343434;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+}
+
+.pointc:hover {
+  background-color: #364966;
   border: 0.2rem solid #343434;
   width: 0.9rem;
   height: 0.9rem;

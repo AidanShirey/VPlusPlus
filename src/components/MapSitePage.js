@@ -41,7 +41,7 @@ export default class MapSitePage extends React.Component{
                                 
                             </div>
                         </div>
-                        <LineupMap name={this.name} side={this.side} site={this.site} sort={this.sort}/>
+                        <LineupMap name={this.name} side={this.side} site={this.site} sort={this.sort} handler={this.props.handler}/>
                         <MapSitePageRow name={this.name} side={this.side} site={this.site} sort={this.sort}/>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ export default class MapSitePage extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <LineupMap name={this.name} side={this.side} site={this.site} sort={this.sort}/>
+                        <LineupMap name={this.name} side={this.side} site={this.site} sort={this.sort} handler={this.props.handler}/>
                         <MapSitePageRow name={this.name} side={this.side} site={this.site} sort={this.sort}/>
                     </div>
                 </div>
