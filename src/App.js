@@ -11,7 +11,8 @@ export default class App extends React.Component{
   constructor(){
     super();
     this.state = {lineupSort: "DefaultSpread",
-      site: "A-Site"};
+      site: "A-Site",
+      count: 1};
     this.setState = this.setState.bind(this);
   }
 
@@ -36,20 +37,20 @@ export default class App extends React.Component{
           <ScrollToTop>
           <Switch>
             <Route path="/" exact component={Homepage}/>
-            <Route path="/defending-Ascent" component={() => <MapSitePage name="Ascent" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/attacking-Ascent" component={() => <MapSitePage name="Ascent" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/defending-Bind" component={() => <MapSitePage name="Bind" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/attacking-Bind" component={() => <MapSitePage name="Bind" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/defending-Breeze" component={() => <MapSitePage name="Breeze" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/attacking-Breeze" component={() => <MapSitePage name="Breeze" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/defending-Fracture" component={() => <MapSitePage name="Fracture" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/attacking-Fracture" component={() => <MapSitePage name="Fracture" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/defending-Haven" component={() => <MapSitePage name="Haven" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/attacking-Haven" component={() => <MapSitePage name="Haven" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/defending-Icebox" component={() => <MapSitePage name="Icebox" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/attacking-Icebox" component={() => <MapSitePage name="Icebox" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/defending-Split" component={() => <MapSitePage name="Split" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
-            <Route path="/attacking-Split" component={() => <MapSitePage name="Split" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site}/>}/>
+            <Route path="/defending-Ascent" component={() => <MapSitePage name="Ascent" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/attacking-Ascent" component={() => <MapSitePage name="Ascent" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/defending-Bind" component={() => <MapSitePage name="Bind" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/attacking-Bind" component={() => <MapSitePage name="Bind" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/defending-Breeze" component={() => <MapSitePage name="Breeze" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/attacking-Breeze" component={() => <MapSitePage name="Breeze" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/defending-Fracture" component={() => <MapSitePage name="Fracture" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/attacking-Fracture" component={() => <MapSitePage name="Fracture" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/defending-Haven" component={() => <MapSitePage name="Haven" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/attacking-Haven" component={() => <MapSitePage name="Haven" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/defending-Icebox" component={() => <MapSitePage name="Icebox" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/attacking-Icebox" component={() => <MapSitePage name="Icebox" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/defending-Split" component={() => <MapSitePage name="Split" side="Defending" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/attacking-Split" component={() => <MapSitePage name="Split" side="Attacking" handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
           </Switch>
           </ScrollToTop>
         </div>

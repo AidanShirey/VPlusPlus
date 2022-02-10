@@ -13,6 +13,7 @@ export default class MapSitePage extends React.Component{
         this.side = this.props.side;
         this.sort = this.props.sort;
         this.site = this.props.site;
+        this.count = this.props.count;
     }
 
     render(){
@@ -41,7 +42,7 @@ export default class MapSitePage extends React.Component{
                                 
                             </div>
                         </div>
-                        <LineupMap name={this.name} side={this.side} site={this.site} sort={this.sort} handler={this.props.handler}/>
+                        <LineupMap name={this.name} side={this.side} site={this.site} sort={this.sort} handler={this.props.handler} count={this.props.count}/>
                         <MapSitePageRow name={this.name} side={this.side} site={this.site} sort={this.sort}/>
                     </div>
                 </div>
@@ -71,7 +72,7 @@ export default class MapSitePage extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <LineupMap name={this.name} side={this.side} site={this.site} sort={this.sort} handler={this.props.handler}/>
+                        <LineupMap name={this.name} side={this.side} site={this.site} sort={this.sort} handler={this.props.handler} count={this.props.count}/>
                         <MapSitePageRow name={this.name} side={this.side} site={this.site} sort={this.sort}/>
                     </div>
                 </div>

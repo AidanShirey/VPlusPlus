@@ -36,8 +36,11 @@ export default function MapSitePageRow(props){
             let items = [];
             if (total !== 0){
                 while (child <= total){
-                    items.push((<div key="item{child}" className='item'>
-                        <SiteCard key="sitecard{child}" name={props.name} side={props.side} site={props.site} sort={props.sort} count={child}/>
+                    let lchild = child;
+                    let k = "item" + lchild;
+                    let k1 = "sitecard" + lchild;
+                    items.push((<div key={k} className='item'>
+                        <SiteCard key={k1} name={props.name} side={props.side} site={props.site} sort={props.sort} count={child}/>
                     </div>));
                     child++;
                 } 
