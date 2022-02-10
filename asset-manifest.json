@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/vplusplus/static/css/main.26d89b40.chunk.css",
-    "main.js": "/vplusplus/static/js/main.641f7a34.chunk.js",
-    "main.js.map": "/vplusplus/static/js/main.641f7a34.chunk.js.map",
+    "main.js": "/vplusplus/static/js/main.2b6ee0fe.chunk.js",
+    "main.js.map": "/vplusplus/static/js/main.2b6ee0fe.chunk.js.map",
     "runtime-main.js": "/vplusplus/static/js/runtime-main.faeaaab8.js",
     "runtime-main.js.map": "/vplusplus/static/js/runtime-main.faeaaab8.js.map",
-    "static/js/2.05903203.chunk.js": "/vplusplus/static/js/2.05903203.chunk.js",
-    "static/js/2.05903203.chunk.js.map": "/vplusplus/static/js/2.05903203.chunk.js.map",
+    "static/js/2.846cce0a.chunk.js": "/vplusplus/static/js/2.846cce0a.chunk.js",
+    "static/js/2.846cce0a.chunk.js.map": "/vplusplus/static/js/2.846cce0a.chunk.js.map",
     "static/js/3.7a1208d3.chunk.js": "/vplusplus/static/js/3.7a1208d3.chunk.js",
     "static/js/3.7a1208d3.chunk.js.map": "/vplusplus/static/js/3.7a1208d3.chunk.js.map",
     "index.html": "/vplusplus/index.html",
     "static/css/main.26d89b40.chunk.css.map": "/vplusplus/static/css/main.26d89b40.chunk.css.map",
-    "static/js/2.05903203.chunk.js.LICENSE.txt": "/vplusplus/static/js/2.05903203.chunk.js.LICENSE.txt",
+    "static/js/2.846cce0a.chunk.js.LICENSE.txt": "/vplusplus/static/js/2.846cce0a.chunk.js.LICENSE.txt",
     "static/media/MapCard.css": "/vplusplus/static/media/splitbg.7a066c48.png",
     "static/media/LineupMap.css": "/vplusplus/static/media/splitmap.38b3e14e.png",
     "static/media/breachportrait.53eabdd0.jpg": "/vplusplus/static/media/breachportrait.53eabdd0.jpg",
@@ -34,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.faeaaab8.js",
-    "static/js/2.05903203.chunk.js",
+    "static/js/2.846cce0a.chunk.js",
     "static/css/main.26d89b40.chunk.css",
-    "static/js/main.641f7a34.chunk.js"
+    "static/js/main.2b6ee0fe.chunk.js"
   ]
 }
