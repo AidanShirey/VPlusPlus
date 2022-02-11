@@ -29,8 +29,7 @@ export default class MapSitePage extends React.Component{
                                         <div className='mapsitedeskdivider1'></div>
                                         <div className='mapsitedeskdivider2'></div>
                                     </div>
-                                    <div className="mapsitetext"><strong>{this.side}</strong></div>
-                                    <div className='mapsitedivider'>////////////</div>
+                                    
                                     <SiteSwitcher map={this.name} handler={this.props.handler} site={this.site} sort={this.sort}/>
                                     <SideSwitcher name={this.name} sort={this.sort} site={this.site}/>
                                 </div>
@@ -60,8 +59,7 @@ export default class MapSitePage extends React.Component{
                                         <div className='mapsitedeskdivider1'></div>
                                         <div className='mapsitedeskdivider2'></div>
                                     </div>
-                                    <div className="mapsitetext"><strong>{this.side}</strong></div>
-                                    <div className='mapsitedivider'>////////////</div>
+                                    
                                     <SiteSwitcher map={this.name} handler={this.props.handler} site={this.site} sort={this.sort}/>
                                     <SideSwitcher name={this.name} sort={this.sort} site={this.site}/>
                                 </div>

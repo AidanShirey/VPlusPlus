@@ -195,6 +195,9 @@
 
   .lrow {
     display: grid;
+    position: relative;
+    z-index: -1;
+    min-height: 12rem;
     grid-template-columns: 29rem 29rem;
   }
 
@@ -204,20 +207,28 @@
     height: auto;
     margin-top: 0;
     overflow: initial;
+    width: calc(100% + 4rem);
   }
 
   .mapsitetext {
-    display: block;
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
     letter-spacing: 31px;
-    padding-left: 31px;
+    width: 100%;
     font-size: 30px;
     text-transform: uppercase;
     color: whitesmoke;
+    background-color: black;
   }
 
   .mapsitedivider {
-    display: block;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+    background-color: black;
+    width: 100%;
   }
 
   .mapsitehead {
@@ -244,10 +255,6 @@
     align-items: center;
   }
 
-  .mapsitedivider {
-    padding-left: 29px;
-  }
-
   .mapsitedeskdivider1 {
     display: none;
   }
@@ -259,6 +266,11 @@
   .mapsitehead {
     margin-right: 0;
     margin-left: 0;
+    width: 100%;
+    display: flex;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    justify-content: center;
   }
 }
 
@@ -269,22 +281,17 @@
 }
 
 @media (max-width: 425px) {
-  .mapsitehead {
-    font-size: 15vw;
-  }
-
   .mapsitetext {
     font-size: 20px;
-    margin: 0.5rem 0;
     letter-spacing: 18px;
-    padding-left: 18px;
+    padding-left: 0;
   }
 
   .mapsitedivider {
     font-size: 30px;
     font-weight: bolder;
     letter-spacing: 15px;
-    padding-right: 15px;
+    padding-right: 0;
   }
 
   .mapsitepagecardstripe1 {
@@ -299,15 +306,14 @@
 @media (max-width: 320px) {
   .mapsitetext {
     font-size: 20px;
-    margin: 0.5rem 0;
     letter-spacing: 18px;
-    padding-left: 18px;
+    padding-left: 0;
   }
 
   .mapsitedivider {
     font-size: 30px;
     font-weight: bolder;
     letter-spacing: 15px;
-    padding-right: 15px;
+    padding-right: 0;
   }
 }

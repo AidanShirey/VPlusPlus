@@ -1,6 +1,6 @@
 .siteswitcher {
   width: 424px;
-  height: 30px;
+  height: calc(30px + 2rem);
   display: none;
   align-items: center;
   overflow: hidden;
@@ -15,7 +15,7 @@
   width: 40px;
   height: 130%;
   position: relative;
-  z-index: -1;
+  z-index: 0;
   transform: translate(5px, -4px) rotate(15deg);
   background-color: #dc3d4b;
 }
@@ -54,7 +54,7 @@
   width: 40px;
   height: 130%;
   position: relative;
-  z-index: -1;
+  z-index: 0;
   transform: translate(-5px, -5px) rotate(15deg);
   background-color: #dc3d4b;
 }
@@ -136,6 +136,8 @@
   font-size: 24px;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
   color: black;
   background-color: #dc3d4b;
 }
@@ -144,7 +146,7 @@
   width: 40px;
   height: 130%;
   position: relative;
-  z-index: -1;
+  z-index: 0;
   transform: translate(5px, -4px) rotate(15deg);
   background-color: #ffad33;
 }
@@ -153,7 +155,7 @@
   width: 40px;
   height: 130%;
   position: relative;
-  z-index: -1;
+  z-index: 0;
   transform: translate(-5px, -5px) rotate(15deg);
   background-color: #ffad33;
 }
@@ -164,6 +166,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
   font-size: 24px;
   color: black;
   background-color: #ffad33;
@@ -175,6 +179,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
   font-size: 24px;
   color: black;
   background-color: #3399ff;
@@ -184,7 +190,7 @@
   width: 40px;
   height: 130%;
   position: relative;
-  z-index: -1;
+  z-index: 0;
   transform: translate(5px, -4px) rotate(15deg);
   background-color: #3399ff;
 }
@@ -193,7 +199,7 @@
   width: 40px;
   height: 130%;
   position: relative;
-  z-index: -1;
+  z-index: 0;
   transform: translate(-5px, -5px) rotate(15deg);
   background-color: #3399ff;
 }
@@ -209,12 +215,17 @@
 @media (max-width: 1024px) {
   .siteswitcher {
     display: flex;
+    width: 100%;
+    padding: 0 2rem;
+    border-top: 2rem solid black;
+    background-color: black;
   }
 }
 
 @media (max-width: 425px) {
   .siteswitcher {
-    width: 270px;
+    width: 100%;
+    border-top: 2rem solid black;
   }
 
   .haven-mobile {
@@ -228,6 +239,6 @@
 
 @media (max-width: 320px) {
   .siteswitcher {
-    width: 270px;
+    width: 100%;
   }
 }

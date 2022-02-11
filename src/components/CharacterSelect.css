@@ -95,8 +95,8 @@
 
 @media (max-width: 1024px) {
   .imageportraitcontainer {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     margin-left: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 50%;
@@ -115,36 +115,32 @@
   }
 
   .charselectrow3 {
-    display: flex;
     margin-right: 0;
     margin-left: 0;
     margin-top: 0;
   }
 
   .charselectrow4 {
-    display: flex;
     margin-right: 0;
     margin-left: 0;
     margin-top: 0;
   }
 
   .charselectrow1 {
-    display: flex;
     margin-right: 0;
     margin-left: 0;
     margin-top: 0;
   }
 
   .charselectrow2 {
-    display: flex;
     margin-right: 0;
     margin-top: 0;
     margin-left: 0;
   }
 
   .roleportraitcontainer {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     margin-left: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 50%;
@@ -159,12 +155,12 @@
   }
 
   .charselect {
-    margin-top: 3rem;
+    padding: 2rem 1rem 0rem;
     margin-right: 0;
     margin-left: 0;
-    margin-bottom: 1rem;
+    background-color: black;
     border-bottom: none;
-    width: 100%;
+    width: calc(100% + 4rem);
   }
 }
 
@@ -173,20 +169,6 @@
     display: flex;
     margin-left: 1.5rem;
     flex-direction: column;
-  }
-
-  .imageportraitcontainer {
-    width: 3rem;
-    height: 3rem;
-    margin-left: 1rem;
-    border-radius: 50%;
-  }
-
-  .roleportraitcontainer {
-    width: 3rem;
-    height: 3rem;
-    margin-left: 1rem;
-    border-radius: 50%;
   }
 }
 
@@ -203,19 +185,5 @@
     display: flex;
     margin-left: 0;
     flex-direction: column;
-  }
-
-  .imageportraitcontainer {
-    width: 3rem;
-    height: 3rem;
-    margin-left: 1rem;
-    border-radius: 50%;
-  }
-
-  .roleportraitcontainer {
-    width: 3rem;
-    height: 3rem;
-    margin-left: 1rem;
-    border-radius: 50%;
   }
 }
