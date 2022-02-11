@@ -10,62 +10,36 @@ export default class SiteSwitcher extends React.Component{
     }
 
     render(){
-        if (this.name !== "Haven"){
-            return (
-            <div className="siteswitcher">
-            <div className='a-site-button' onClick={() => this.props.handler({lineupSort: this.props.sort, site: 'A-Site'})}>
-                <div className='a-site-starter'></div>
-                <div className='a-site'>
-                    <div>
-                        <em><strong>A - Site</strong></em>
-                    </div>
-                </div>
-                <div className='a-site-ender'></div>
-            </div>
-            
-            <div className='b-site-button' onClick={() => this.props.handler({lineupSort: this.props.sort, site: 'B-Site'})}>
-                <div className='b-site-starter'></div>
-                <div className='b-site'>
-                    <div>
-                        <em><strong>B - Site</strong></em>
-                    </div>
-                </div>
-                <div className='b-site-ender'></div>
-            </div>
-            
-        </div>)
-            
-        }
         return (
             <div className="siteswitcher">
-                <div className='haven-a-site-button' onClick={() => this.props.handler({lineupSort:  this.sort, site: 'A-Site'})}>
+                <div className='haven-a-site-button' onClick={() => this.props.handler({lineupSort:  this.sort, site: 'Lineups'})}>
                     <div className='a-site-starter'></div>
                     <div className='a-site'>
                         <div>
-                            <em className='haven-desktop'><strong>A - Site</strong></em>
-                            <em className='haven-mobile'><strong>A</strong></em>
+                            <em className='haven-desktop'><strong>Lineups</strong></em>
+                            <em className='haven-mobile'><strong>L</strong></em>
                         </div>
                     </div>
                     <div className='a-site-ender'></div>
                 </div>
                 
-                <div className='haven-b-site-button' onClick={() => this.props.handler({lineupSort:  this.sort, site: 'B-Site'})}>
+                <div className='haven-b-site-button' onClick={() => this.props.handler({lineupSort:  this.sort, site: 'Postplants'})}>
                     <div className='b-site-starter'></div>
                     <div className='b-site'>
                         <div>
-                            <em className='haven-desktop'><strong>B - Site</strong></em>
-                            <em className='haven-mobile'><strong>B</strong></em>
+                            <em className='haven-desktop'><strong>Postplants</strong></em>
+                            <em className='haven-mobile'><strong>P</strong></em>
                         </div>
                     </div>
                     <div className='b-site-ender'></div>
                 </div>
 
-                <div className='c-site-button' onClick={() => this.props.handler({lineupSort:  this.sort, site: 'C-Site'})}>
+                <div className='c-site-button' onClick={() => this.props.handler({lineupSort:  this.sort, site: 'Setups'})}>
                     <div className='c-site-starter'></div>
                     <div className='c-site'>
                         <div>
-                            <em className='haven-desktop'><strong>C - Site</strong></em>
-                            <em className='haven-mobile'><strong>C</strong></em>
+                            <em className='haven-desktop'><strong>Setups</strong></em>
+                            <em className='haven-mobile'><strong>S</strong></em>
                         </div>
                     </div>
                     <div className='c-site-ender'></div>

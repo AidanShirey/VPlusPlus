@@ -31,7 +31,7 @@ export default class LineupMap extends React.Component{
     }
 
     componentDidMount(){
-        get(child(dbRef, `${this.name}/${this.side}/${"A-Site"}/${this.sort}/`)).then((snapshot) => {
+        get(child(dbRef, `${this.name}/${this.side}/${"Lineups"}/${this.sort}/`)).then((snapshot) => {
             if (snapshot.exists()) {
                 let total = snapshot.size;
                 let child = 1;
@@ -42,7 +42,7 @@ export default class LineupMap extends React.Component{
                         let lineupY = snapshot.child(lineupselect).val().LineupY;
                         let lchild = child;
                         let k = "pointa" + child;
-                        let point = (<div style={{top: lineupY, left: lineupX}} key={k} className='pointa' onClick={() => this.props.handler({lineupSort: this.sort, site: "A-Site", count: lchild})}></div>);
+                        let point = (<div style={{top: lineupY, left: lineupX}} key={k} className='pointa' onClick={() => this.props.handler({lineupSort: this.sort, site: "Lineups", count: lchild})}></div>);
                         this.setState({itemList: [...this.state.itemList, point]});
                         child++;
                     } 
@@ -54,7 +54,7 @@ export default class LineupMap extends React.Component{
                 console.error(error);
               }); 
 
-        get(child(dbRef, `${this.name}/${this.side}/${"B-Site"}/${this.sort}/`)).then((snapshot) => {
+        get(child(dbRef, `${this.name}/${this.side}/${"Setups"}/${this.sort}/`)).then((snapshot) => {
                 if (snapshot.exists()) {
                     let total = snapshot.size;
                     let child = 1;
@@ -67,7 +67,7 @@ export default class LineupMap extends React.Component{
                             let lineupX = snapshot.child(lineupselect).val().LineupX;
                             let lineupY = snapshot.child(lineupselect).val().LineupY;
                             let k = "pointb" + child;
-                            let point = (<div style={{top: lineupY, left: lineupX}} key={k} className='pointb' onClick={() => this.props.handler({lineupSort: this.sort, site: "B-Site", count: lchild})}></div>);
+                            let point = (<div style={{top: lineupY, left: lineupX}} key={k} className='pointb' onClick={() => this.props.handler({lineupSort: this.sort, site: "Setups", count: lchild})}></div>);
                             this.setState({itemList: [...this.state.itemList, point]});
                             child++;
                         } 
@@ -78,8 +78,8 @@ export default class LineupMap extends React.Component{
             }).catch((error) => {
                 console.error(error);
             }); 
-        if (this.name === "Haven"){
-            get(child(dbRef, `${this.name}/${this.side}/${"B-Site"}/${this.sort}/`)).then((snapshot) => {
+
+            get(child(dbRef, `${this.name}/${this.side}/${"Postplants"}/${this.sort}/`)).then((snapshot) => {
                 if (snapshot.exists()) {
                     let total = snapshot.size;
                     let child = 1;
@@ -92,7 +92,7 @@ export default class LineupMap extends React.Component{
                             let lineupY = snapshot.child(lineupselect).val().LineupY;
                             let lchild = child;
                             let k = "pointc" + child;
-                            let point = (<div style={{top: lineupY, left: lineupX}} key={k} className='pointc' onClick={() => this.props.handler({lineupSort: this.sort, site: "C-Site", count: lchild})}></div>);
+                            let point = (<div style={{top: lineupY, left: lineupX}} key={k} className='pointc' onClick={() => this.props.handler({lineupSort: this.sort, site: "Postplants", count: lchild})}></div>);
                             this.setState({itemList: [...this.state.itemList, point]});
                             child++;
                         } 
@@ -103,7 +103,7 @@ export default class LineupMap extends React.Component{
             }).catch((error) => {
                 console.error(error);
             });
-        }
+        
     }
 
     render(){

@@ -29,7 +29,7 @@
   border-radius: 50%;
 }
 
-.pointb {
+.pointc {
   position: absolute;
   background-color: #343434;
   border: 0.2rem solid #ffad33;
@@ -38,7 +38,7 @@
   border-radius: 50%;
 }
 
-.pointc {
+.pointb {
   position: absolute;
   background-color: #343434;
   border: 0.2rem solid #3399ff;
@@ -55,7 +55,7 @@
   border-radius: 50%;
 }
 
-.pointb:hover {
+.pointc:hover {
   background-color: #ffad33;
   border: 0.2rem solid #343434;
   width: 0.9rem;
@@ -63,7 +63,7 @@
   border-radius: 50%;
 }
 
-.pointc:hover {
+.pointb:hover {
   background-color: #3399ff;
   border: 0.2rem solid #343434;
   width: 0.9rem;
