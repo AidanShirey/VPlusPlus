@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/vplusplus/static/css/main.26d89b40.chunk.css",
+    "main.css": "/vplusplus/static/css/main.b5f626ef.chunk.css",
     "main.js": "/vplusplus/static/js/main.2b6ee0fe.chunk.js",
     "main.js.map": "/vplusplus/static/js/main.2b6ee0fe.chunk.js.map",
     "runtime-main.js": "/vplusplus/static/js/runtime-main.faeaaab8.js",
@@ -10,7 +10,7 @@
     "static/js/3.7a1208d3.chunk.js": "/vplusplus/static/js/3.7a1208d3.chunk.js",
     "static/js/3.7a1208d3.chunk.js.map": "/vplusplus/static/js/3.7a1208d3.chunk.js.map",
     "index.html": "/vplusplus/index.html",
-    "static/css/main.26d89b40.chunk.css.map": "/vplusplus/static/css/main.26d89b40.chunk.css.map",
+    "static/css/main.b5f626ef.chunk.css.map": "/vplusplus/static/css/main.b5f626ef.chunk.css.map",
     "static/js/2.846cce0a.chunk.js.LICENSE.txt": "/vplusplus/static/js/2.846cce0a.chunk.js.LICENSE.txt",
     "static/media/MapCard.css": "/vplusplus/static/media/splitbg.7a066c48.png",
     "static/media/LineupMap.css": "/vplusplus/static/media/splitmap.38b3e14e.png",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.faeaaab8.js",
     "static/js/2.846cce0a.chunk.js",
-    "static/css/main.26d89b40.chunk.css",
+    "static/css/main.b5f626ef.chunk.css",
     "static/js/main.2b6ee0fe.chunk.js"
   ]
 }
