@@ -11,7 +11,7 @@ export default class App extends React.Component{
   constructor(){
     super();
     this.state = {lineupSort: "DefaultSpread",
-      site: "A-Site",
+      site: "Lineups",
       count: 1};
     this.setState = this.setState.bind(this);
   }
