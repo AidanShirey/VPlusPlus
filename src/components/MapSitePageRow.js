@@ -29,7 +29,7 @@ export default function MapSitePageRow(props){
         setlineupSite(props.site);
         setlineupSort(props.sort);
       }
-      get(child(dbRef, `${props.name}/${props.side}/${props.site}/${props.sort}/`)).then((snapshot) => {
+      get(child(dbRef, `${props.name}/${props.site}/${props.sort}/`)).then((snapshot) => {
         if (snapshot.exists()) {
             let total = snapshot.size;
             let child = 1;

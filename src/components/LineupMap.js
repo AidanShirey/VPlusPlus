@@ -31,43 +31,43 @@ export default class LineupMap extends React.Component{
     }
 
     componentDidMount(){
-        get(child(dbRef, `${this.name}/${this.side}/${"Lineups"}/${this.sort}/`)).then((snapshot) => {
+        get(child(dbRef, `${this.name}/${"Lineups"}/${this.sort}/`)).then((snapshot) => {
             if (snapshot.exists()) {
                 let total = snapshot.size;
                 let child = 1;
                 if (total !== 0){
                     while (child <= total){
                         let lineupselect = "Lineup" + child;
+                        let lchild = child;
                         let lineupX = snapshot.child(lineupselect).val().LineupX;
                         let lineupY = snapshot.child(lineupselect).val().LineupY;
-                        let lchild = child;
+                        let lineupSide = snapshot.child(lineupselect).val().LineupSide;
                         let k = "pointa" + child;
-                        let point = (<div style={{top: lineupY, left: lineupX}} key={k} className='pointa' onClick={() => this.props.handler({lineupSort: this.sort, site: "Lineups", count: lchild})}></div>);
+                        let point = (<div style={{top: lineupY, left: lineupX}} key={k} className='pointa' onClick={() => this.props.handler({lineupSort: this.sort, site: "Lineups", side: lineupSide, count: lchild})}></div>);
                         this.setState({itemList: [...this.state.itemList, point]});
                         child++;
                     } 
                 }
                 } else {
-                  console.log("No data available");
+                  console.log("No Data Available");
                 }
               }).catch((error) => {
                 console.error(error);
               }); 
 
-        get(child(dbRef, `${this.name}/${this.side}/${"Setups"}/${this.sort}/`)).then((snapshot) => {
+        get(child(dbRef, `${this.name}/${"Setups"}/${this.sort}/`)).then((snapshot) => {
                 if (snapshot.exists()) {
                     let total = snapshot.size;
                     let child = 1;
-    
-                    
                     if (total !== 0){
                         while (child <= total){
                             let lineupselect = "Lineup" + child;
                             let lchild = child;
                             let lineupX = snapshot.child(lineupselect).val().LineupX;
                             let lineupY = snapshot.child(lineupselect).val().LineupY;
+                            let lineupSide = snapshot.child(lineupselect).val().LineupSide;
                             let k = "pointb" + child;
-                            let point = (<div style={{top: lineupY, left: lineupX}} key={k} className='pointb' onClick={() => this.props.handler({lineupSort: this.sort, site: "Setups", count: lchild})}></div>);
+                            let point = (<div style={{top: lineupY, left: lineupX}} key={k} className='pointb' onClick={() => this.props.handler({lineupSort: this.sort, site: "Setups", side: lineupSide, count: lchild})}></div>);
                             this.setState({itemList: [...this.state.itemList, point]});
                             child++;
                         } 
@@ -79,20 +79,19 @@ export default class LineupMap extends React.Component{
                 console.error(error);
             }); 
 
-            get(child(dbRef, `${this.name}/${this.side}/${"Postplants"}/${this.sort}/`)).then((snapshot) => {
+        get(child(dbRef, `${this.name}/${"Postplants"}/${this.sort}/`)).then((snapshot) => {
                 if (snapshot.exists()) {
                     let total = snapshot.size;
                     let child = 1;
-                    
-                    
                     if (total !== 0){
                         while (child <= total){
                             let lineupselect = "Lineup" + child;
                             let lineupX = snapshot.child(lineupselect).val().LineupX;
                             let lineupY = snapshot.child(lineupselect).val().LineupY;
+                            let lineupSide = snapshot.child(lineupselect).val().LineupSide;
                             let lchild = child;
                             let k = "pointc" + child;
-                            let point = (<div style={{top: lineupY, left: lineupX}} key={k} className='pointc' onClick={() => this.props.handler({lineupSort: this.sort, site: "Postplants", count: lchild})}></div>);
+                            let point = (<div style={{top: lineupY, left: lineupX}} key={k} className='pointc' onClick={() => this.props.handler({lineupSort: this.sort, site: "Postplants", side: lineupSide, count: lchild})}></div>);
                             this.setState({itemList: [...this.state.itemList, point]});
                             child++;
                         } 

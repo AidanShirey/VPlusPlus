@@ -24,7 +24,7 @@ export default function SiteCard(props) {
   const [ lineupName, setlineupName] = useState();
   const [ lineupDescription, setlineupDescription ] = useState();
   useEffect(() => {
-    get(child(dbRef, `${props.name}/${props.side}/${props.site}/${props.sort}/Lineup${props.count}`)).then((snapshot) => {
+    get(child(dbRef, `${props.name}/${props.site}/${props.sort}/Lineup${props.count}`)).then((snapshot) => {
       if (snapshot.exists()) {
         setlineupVideo(snapshot.val().LineupVideo);
         setlineupName(snapshot.val().LineupName);
