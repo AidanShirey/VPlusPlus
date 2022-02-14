@@ -184,6 +184,16 @@
     font-size: 1.5rem;
   }
 
+  .mapcard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 3rem black solid;
+    border-left: 3rem transparent solid;
+    width: 0;
+  }
+
   .mapdivider {
     font-size: 1.2rem;
   }

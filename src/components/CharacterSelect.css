@@ -93,6 +93,10 @@
   border: 0.5rem solid #fa4454;
 }
 
+.active {
+  border: 0.5rem solid #fa4454;
+}
+
 @media (max-width: 1024px) {
   .imageportraitcontainer {
     width: 3.5rem;

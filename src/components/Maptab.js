@@ -1,17 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 export default function Maptab(props) {
-    var linkclassdefending = props.name;
-    var linkclassattacking = props.name;
     return (
-    <div className="topnavtab">
-        <div className="dropdown">
-          <button className="dropbtn"><strong>{props.name}</strong></button>
-            <div className="dropdown-content">
-              <Link to={linkclassdefending}><div>Defending</div></Link>
-              <Link to={linkclassattacking}><div>Attacking</div></Link>
-            </div>
-        </div>
+      <div className="topnavtab">
+        <Link className='tab' to={props.name}><strong>{props.name}</strong></Link>  
       </div>
     )
 }

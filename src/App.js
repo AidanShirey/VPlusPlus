@@ -13,6 +13,7 @@ export default class App extends React.Component{
     this.state = {lineupSort: "DefaultSpread",
       site: "Lineups",
       side: "Defending",
+      role: "row1",
       count: 1};
     this.setState = this.setState.bind(this);
   }
@@ -38,13 +39,13 @@ export default class App extends React.Component{
           <ScrollToTop>
           <Switch>
             <Route path="/" exact component={Homepage}/>
-            <Route path="/Ascent" component={() => <MapSitePage name="Ascent" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
-            <Route path="/Bind" component={() => <MapSitePage name="Bind" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
-            <Route path="/Breeze" component={() => <MapSitePage name="Breeze" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
-            <Route path="/Fracture" component={() => <MapSitePage name="Fracture" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
-            <Route path="/Haven" component={() => <MapSitePage name="Haven" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
-            <Route path="/Icebox" component={() => <MapSitePage name="Icebox" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
-            <Route path="/Split" component={() => <MapSitePage name="Split" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count}/>}/>
+            <Route path="/Ascent" component={() => <MapSitePage name="Ascent" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count} role={this.state.role}/>}/>
+            <Route path="/Bind" component={() => <MapSitePage name="Bind" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count} role={this.state.role}/>}/>
+            <Route path="/Breeze" component={() => <MapSitePage name="Breeze" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count} role={this.state.role}/>}/>
+            <Route path="/Fracture" component={() => <MapSitePage name="Fracture" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count} role={this.state.role}/>}/>
+            <Route path="/Haven" component={() => <MapSitePage name="Haven" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count} role={this.state.role}/>}/>
+            <Route path="/Icebox" component={() => <MapSitePage name="Icebox" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count} role={this.state.role}/>}/>
+            <Route path="/Split" component={() => <MapSitePage name="Split" side={this.state.side} handler={this.setState} sort={this.state.lineupSort} site={this.state.site} count={this.state.count} role={this.state.role}/>}/>
           </Switch>
           </ScrollToTop>
         </div>

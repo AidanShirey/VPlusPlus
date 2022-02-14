@@ -12,20 +12,13 @@ export default function MobileMaptab() {
               </div>
           </button>
             <div className="dropdown-content">
-              <Link to={"defending-Ascent"}><div>Ascent Defending</div></Link>
-              <Link to={"attacking-Ascent"}><div>Ascent Attacking</div></Link>
-              <Link to={"defending-Bind"}><div>Bind Defending</div></Link>
-              <Link to={"attacking-Bind"}><div>Bind Attacking</div></Link>
-              <Link to={"defending-Breeze"}><div>Breeze Defending</div></Link>
-              <Link to={"attacking-Breeze"}><div>Breeze Attacking</div></Link>
-              <Link to={"defending-Haven"}><div>Haven Defending</div></Link>
-              <Link to={"attacking-Haven"}><div>Haven Attacking</div></Link>
-              <Link to={"defending-Icebox"}><div>Icebox Defending</div></Link>
-              <Link to={"attacking-Icebox"}><div>Icebox Attacking</div></Link>
-              <Link to={"defending-Split"}><div>Split Defending</div></Link>
-              <Link to={"attacking-Split"}><div>Split Attacking</div></Link>
-              <Link to={"defending-Fracture"}><div>Fracture Defending</div></Link>
-              <Link to={"attacking-Fracture"}><div>Fracture Attacking</div></Link>
+              <Link to={"Ascent"}><div>Ascent</div></Link>
+              <Link to={"Bind"}><div>Bind</div></Link>
+              <Link to={"Breeze"}><div>Breeze</div></Link>
+              <Link to={"Fracture"}><div>Fracture</div></Link>
+              <Link to={"Haven"}><div>Haven</div></Link>
+              <Link to={"Icebox"}><div>Icebox</div></Link>
+              <Link to={"Split"}><div>Split</div></Link>
             </div>
         </div>
       </div>

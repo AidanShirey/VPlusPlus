@@ -97,6 +97,15 @@
   font-size: 28px;
 }
 
+.tab {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.tab:hover {
+  color: #fa4454;
+}
+
 .desktopnav {
   display: flex;
   width: 80%;
