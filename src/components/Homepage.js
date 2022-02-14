@@ -7,7 +7,7 @@ export default function Homepage() {
         <div className="homepagecard">    
           <div className='homepageheader'>
             <div className='homepageheadercontainer'>
-              <div className='homepageheadercontainertext'><em>Select Map</em></div>              
+              <div className='homepageheadercontainertext'>Select Map</div>              
               <div className='homepagecutandbody'>
               <div className='homepagecut'></div>
               <div className='homepagecutbody'></div> 
