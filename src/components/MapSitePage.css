@@ -67,7 +67,7 @@
   align-items: center;
   letter-spacing: 2px;
   font-size: 2.5rem;
-  margin-right: 1rem;
+  width: 33%;
   margin-left: 0;
   margin-top: 1rem;
   text-transform: uppercase;
@@ -95,7 +95,7 @@
 .mapsitedeskdividercontainer {
   position: relative;
   display: flex;
-  width: 15%;
+  width: 33%;
 }
 
 .mapsitedeskdivider2 {
@@ -157,14 +157,19 @@
 
 .activefiltercontainer {
   display: flex;
-  width: 50%;
+  width: 33%;
   justify-content: center;
+  text-align: end;
   align-items: center;
   margin-left: auto;
-  margin-right: auto;
+  padding-right: 2rem;
   flex-wrap: wrap;
   margin-top: 1rem;
   font-size: 1.5rem;
+}
+
+.activefiltercontainer strong {
+  width: 100%;
 }
 
 @media (min-width: 1920px) {
@@ -186,8 +191,12 @@
 }
 
 @media (max-width: 1440px) {
+  .activefiltercontainer {
+    font-size: 1.25rem;
+  }
+
   .mapsitehead {
-    margin-right: 4rem;
+    font-size: 2rem;
   }
 }
 
@@ -201,7 +210,9 @@
     background-color: black;
     width: 100%;
     margin-top: 0;
+    text-align: center;
     padding-top: 2rem;
+    padding-right: 0;
   }
 
   .mapsitecutandbody {
@@ -253,7 +264,6 @@
   .mapsitehead {
     color: #fa4454;
     letter-spacing: 2px;
-    font-size: 100px;
     text-transform: uppercase;
     margin-top: 0;
   }

@@ -128,3 +128,13 @@ hr {
   background-color: #3399ff;
   color: #3399ff;
 }
+
+@media (max-width: 1440px) {
+  .lsitecardlineupname {
+    font-size: 1.25rem;
+  }
+
+  .lsitecardside {
+    font-size: 1.25rem;
+  }
+}

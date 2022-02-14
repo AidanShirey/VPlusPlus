@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #343434;
+  background: black;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -47,6 +47,15 @@
   width: 100%;
   color: #fa4454;
   background-color: black;
+}
+
+.topnavtab {
+  margin: 0 auto;
+  font-size: 28px;
+}
+
+.topnavtab:nth-of-type(1n) {
+  margin-left: 0;
 }
 
 .row {
@@ -90,11 +99,6 @@
   transform: translate(0px, -4rem) rotate(15deg);
   z-index: -1;
   background-color: #1a1a1a;
-}
-
-.topnavtab {
-  margin: 0 auto;
-  font-size: 28px;
 }
 
 .tab {
@@ -211,6 +215,10 @@ body {
   .mobilenav {
     display: flex;
     width: 33%;
+    margin: 0 auto;
+  }
+
+  .mobilenav .topnavtab:nth-of-type(1n) {
     margin: 0 auto;
   }
 

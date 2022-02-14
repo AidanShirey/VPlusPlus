@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 
 export default function MapCard(props) {
     var map = "mapcard " + props.name;
-    var linkclassdefending = props.name;
-    var linkclassattacking = props.name;
     return (
         <div className={map}>
             <div className='mapoverlay'>
@@ -16,10 +14,7 @@ export default function MapCard(props) {
                 <div className='mapnamecut'></div>
             </div>
             <div className='buttoncontainer'>
-                <Link className="mapbutton" style={{textDecoration: "none"}} to={linkclassattacking}><strong>Attacking</strong></Link>
-                <div className='mdividerline1'></div>
-                <div className='mdividerline2'></div>
-                <Link className="mapbutton" style={{textDecoration: "none"}} to={linkclassdefending}><strong>Defending</strong></Link>
+                <Link className="mapbutton" style={{textDecoration: "none"}} to={props.name}><strong>View Map Content</strong></Link>
             </div>
             </div>
         </div>
