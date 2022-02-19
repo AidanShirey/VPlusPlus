@@ -6,7 +6,6 @@ import ScrollToTop from './components/ScrollToTop'
 import {HashRouter as Router, Route, Switch} from "react-router-dom"
 import React from 'react'
 
-
 export default class App extends React.Component{
   constructor(){
     super();

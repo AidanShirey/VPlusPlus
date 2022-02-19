@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './SiteCard.css'
 import { initializeApp } from "firebase/app"
 import { getDatabase, ref, child, get } from "firebase/database"
+import parse from 'html-react-parser'
 
 const firebaseConfig = {
   apiKey: "AIzaSyAd3JIcPWlZ5dtllHg15Cogya9HqEs1sWE",
@@ -37,10 +38,16 @@ export default function SiteCard(props) {
         }); 
     }, [props.sort, props.site]);
 
+    function check(){
+      if (typeof(lineupVideo) !== 'undefined'){
+        console.log("Not undefined: " + typeof(lineupVideo))
+        return parse(lineupVideo);
+      }
+    }
+
     return (
       <div className="sitecard">
-        <video className="sitecardlineup" src={lineupVideo} controls>
-        </video>
+        {check()}
         <div className={props.site}>
         <div className="sitecarddesc">
           <div className={`sitecardheader ${props.site}`}>
