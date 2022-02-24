@@ -68,7 +68,7 @@ hr {
 @media (max-width: 425px) {
   .sitecard {
     margin: 0;
-    width: 19.4rem;
+    width: 100vw;
   }
 
   .sitecard::before {

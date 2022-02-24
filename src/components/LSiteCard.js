@@ -43,7 +43,6 @@ export default function LSiteCard(props) {
 
     function check(){
       if (typeof(lineupVideo) !== 'undefined'){
-        console.log("Not undefined: " + typeof(lineupVideo))
         return parse(lineupVideo);
       }
     }
