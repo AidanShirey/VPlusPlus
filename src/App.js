@@ -9,7 +9,7 @@ import React from 'react'
 export default class App extends React.Component{
   constructor(){
     super();
-    this.state = {lineupSort: "DefaultSpread",
+    this.state = {lineupSort: "Brimstone",
       site: "Lineups",
       side: "Defending",
       role: "row1",
