@@ -168,8 +168,12 @@
   font-size: 1.5rem;
 }
 
-.activefiltercontainer strong {
+.filtertext {
   width: 100%;
+}
+
+.filtertextmobile {
+  display: none;
 }
 
 @media (min-width: 1920px) {
@@ -213,6 +217,10 @@
     text-align: center;
     padding-top: 2rem;
     padding-right: 0;
+  }
+
+  .filtertextmobile {
+    display: inline-block;
   }
 
   .mapsitecutandbody {

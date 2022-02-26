@@ -30,7 +30,7 @@ export default class MapSitePage extends React.Component{
                                     </div>
                                     <SiteSwitcher map={this.name} handler={this.props.handler} site={this.site} sort={this.sort}/>
                                     <div className='activefiltercontainer'>
-                                        <strong>Active Filter: {this.props.sort}</strong>
+                                        <strong className='filtertext'>Active Filter: {this.sort}<strong className='filtertextmobile'>, {this.site}</strong></strong>
                                     </div>
                                 </div>
                                 <CharacterSelect handler={this.props.handler} site={this.site} sort={this.sort} role={this.role}/>
