@@ -11,7 +11,7 @@ export default class App extends React.Component{
     super();
     this.state = {lineupSort: "Brimstone",
       site: "Lineups",
-      side: "Defending",
+      side: "Attacking",
       role: "row1",
       count: 1};
     this.setState = this.setState.bind(this);
