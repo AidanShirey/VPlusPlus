@@ -33,6 +33,8 @@ export default function LSiteCard(props) {
         setlineupDescription(snapshot.val().LineupDescription);          
         } else {
           console.log("No data available");
+          setlineupName("Lineup Unavailable");
+          setlineupDescription("Lineup unavailable: Agent does not have any lineups in this category. Please select another category to view lineups.");
         }
         }).catch((error) => {
           console.error(error);

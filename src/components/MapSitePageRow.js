@@ -47,7 +47,10 @@ export default function MapSitePageRow(props){
                 setitemList(items);
             }
             } else {
+              let items = [];
               console.log("No data available");
+              items.push((<div className='error' key="error">Lineups unavailable: Agent does not have any lineups in this category. Please select another category to view lineups.</div>));
+              setitemList(items);
             }
           }).catch((error) => {
             console.error(error);
