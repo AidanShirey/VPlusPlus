@@ -157,7 +157,6 @@ button {
 .role-dropdown-content {
   display: none;
   position: absolute;
-  min-width: 4rem;
   background-color: black;
   right: 0;
   z-index: 1;

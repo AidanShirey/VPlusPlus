@@ -145,7 +145,7 @@
   .roleportraitcontainer {
     width: 3.5rem;
     height: 3.5rem;
-    margin-left: 1rem;
+    margin-left: 0;
     margin-bottom: 0.5rem;
     border-radius: 50%;
   }
@@ -171,7 +171,7 @@
 @media (max-width: 425px) {
   .portraitcontainer {
     display: flex;
-    margin-left: 1.5rem;
+    margin-left: auto;
     flex-direction: column;
   }
 }
