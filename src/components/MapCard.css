@@ -136,6 +136,7 @@
 @media (max-width: 1024px) {
   .mapcard {
     width: 27rem;
+    height: 18rem;
   }
 }
 
@@ -146,14 +147,6 @@
 }
 
 @media (max-width: 425px) {
-  .buttoncontainer {
-    height: 3rem;
-  }
-
-  .namecontainer {
-    height: 3rem;
-  }
-
   .mdividerline1 {
     width: 0.8rem;
     margin-right: 0.6rem;
@@ -167,7 +160,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 9.7rem;
+    width: 50vw;
     font-size: 2rem;
     text-transform: uppercase;
     border: none;
@@ -175,8 +168,8 @@
   }
 
   .mapcard {
-    width: 19.4rem;
-    height: 13rem;
+    width: 100vw;
+    height: 65vw;
     margin-left: 0;
     margin-right: 0;
   }
@@ -201,6 +194,16 @@
 
   .mapbutton {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .namecontainer {
+    height: 3rem;
+  }
+
+  .buttoncontainer {
+    height: 3rem;
   }
 }
 
