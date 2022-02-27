@@ -175,7 +175,7 @@
   }
 
   .mapname {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .mapcard::before {
@@ -193,7 +193,7 @@
   }
 
   .mapbutton {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -204,6 +204,14 @@
 
   .buttoncontainer {
     height: 3rem;
+  }
+
+  .mapname {
+    font-size: 1.5rem;
+  }
+
+  .mapbutton {
+    font-size: 1rem;
   }
 }
 
