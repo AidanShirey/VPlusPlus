@@ -34,7 +34,7 @@ export default function LSiteCard(props) {
         } else {
           console.log("No data available");
           setlineupName("Lineup Unavailable");
-          setlineupDescription("Lineup unavailable: Agent does not have any lineups in this category. Please select another category to view lineups.");
+          setlineupDescription("Lineup unavailable: Agent does not have any lineups in this category. Please select a point on the map to view a lineup.");
         }
         }).catch((error) => {
           console.error(error);
