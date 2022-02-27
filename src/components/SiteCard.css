@@ -80,6 +80,11 @@ hr {
     border-top: 3rem black solid;
     border-left: 3rem transparent solid;
   }
+
+  .sitecardheader {
+    font-size: 1.4rem;
+    padding: 0 2rem !important;
+  }
 }
 
 .sitecardlineup {
