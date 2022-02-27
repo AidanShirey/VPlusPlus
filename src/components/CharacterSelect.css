@@ -179,7 +179,7 @@
 @media (max-width: 375px) {
   .portraitcontainer {
     display: flex;
-    margin-left: 0;
+    margin-left: auto;
     flex-direction: column;
   }
 }
@@ -187,7 +187,7 @@
 @media (max-width: 320px) {
   .portraitcontainer {
     display: flex;
-    margin-left: 0;
+    margin-left: auto;
     flex-direction: column;
   }
 }
